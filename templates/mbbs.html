@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Chip</title>
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <!-- Favicon -->
+    <link rel="icon" href="{{ url_for('static', filename='img/logo.jpg') }}">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Libraries Stylesheet -->
+    <link href="{{ url_for('static', filename='css/animate.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/owl.carousel.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/tempusdominus-bootstrap-4.min.css') }}" rel="stylesheet" >
+   
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/style.css') }}"  rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+
+
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+        {% block navbar %}
+        {% include "navbar.html" %}
+        {% endblock %}
+
+        <div class="container-fluid bg-primary py-5 mb-5 hero-header7">
+            <div class="container py-5">
+                <div class="row justify-content-center py-5">
+                    <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+                        <h1 class="display-3 text-white animated slideInDown" style="  text-shadow: 1px 1px 2px #000000;">Choose country and university for MBBS</h1>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+     <!-- Service Start -->
+     <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary1 px-3">CHOOSE</h6>
+                <h1 class="mb-5">Country</h1>
+            </div>
+            <div class="row g-4">
+               
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4" style="border-radius: 10px;">
+                        <div class="d-inline-flex align-items-center justify-content-center  rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            <img src="{{ url_for('static', filename='img/t-flag.png') }}" alt="" style="width: 100%;height: 100%;border-radius: 50%;">
+                        </div>
+                        <h5 class="mt-4">TURKEY</h5>
+                        <hr class="w-25 mx-auto bg-primary mb-1">
+                        <hr class="w-50 mx-auto bg-primary mt-0">
+                        <p class="mb-0"></p>
+                        <a href="#" class="btn btn-primary rounded-pill py-2 px-4  mb-1"> BAU University  <i class="fa fa-arrow-right"></i></a><br>
+                        <a href="#" class="btn btn-primary rounded-pill py-2 px-4  mb-1"> Uskudar University <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4" style="border-radius: 10px;">
+                        <div class="d-inline-flex align-items-center justify-content-center  rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            <img src="{{ url_for('static', filename='img/uzab-flag.svg') }}"  alt="" style="width: 100%;height: 100%;border-radius: 50%;">
+                        </div>
+                        <h5 class="mt-4">UZBEKISTAN</h5>
+                        <hr class="w-25 mx-auto bg-primary mb-1">
+                        <hr class="w-50 mx-auto bg-primary mt-0">
+                        <p class="mb-0"></p>
+                        <a  href="{{ url_for('mipr') }}" class="btn btn-primary rounded-pill py-2 px-4 mb-1">MIPER University <i class="fa fa-arrow-right"></i></a>
+                        
+                        <a href="{{ url_for('tsampi') }}" class="btn btn-primary rounded-pill py-2 px-4 mb-1"> TASAMPI University <i class="fa fa-arrow-right"></i></a>
+                       
+                        <a href="{{ url_for('tsampi') }}" class="btn btn-primary rounded-pill py-2 px-4 mb-1"> Tashkent Pediatric Medical institute <i class="fa fa-arrow-right"></i></a>
+                        
+                        <a href="{{ url_for('fmiph') }}" class="btn btn-primary rounded-pill py-2 px-4 mb-1"> Fergana Medical Institute of Public health <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4" style="border-radius: 10px;">
+                        <div class="d-inline-flex align-items-center justify-content-center  rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            <img src="{{ url_for('static', filename='img/georgia.png') }}" alt="" style="width: 100%;height: 100%;border-radius: 50%;">
+                        </div>
+                        <h5 class="mt-4">Georgia</h5>
+                        <hr class="w-25 mx-auto bg-primary mb-1">
+                        <hr class="w-50 mx-auto bg-primary mt-0">
+                        <p class="mb-0"></p>
+                        <a href="#" class="btn btn-primary rounded-pill py-2 px-4 mb-1">TBILIS STATE UNIVERSITY<i class="fa fa-arrow-right"></i></a>
+
+                        <a href="#" class="btn btn-primary rounded-pill py-2 px-4 mb-1">Caucasus International University<i class="fa fa-arrow-right"></i></a>
+
+                        <a href="#" class="btn btn-primary rounded-pill py-2 px-4 mb-1">The University Of Georgia<i class="fa fa-arrow-right"></i></a>
+
+                        <a href="#" class="btn btn-primary rounded-pill py-2 px-4 mb-1">Tbilisi State Medical University<i class="fa fa-arrow-right"></i></a>
+                        <a href="#" class="btn btn-primary rounded-pill py-2 px-4 mb-1">Tbilisi State University<i class="fa fa-arrow-right"></i></a>
+                        <a href="#" class="btn btn-primary rounded-pill py-2 px-4 mb-1">ILIA State University<i class="fa fa-arrow-right"></i></a>
+                        <a href="#" class="btn btn-primary rounded-pill py-2 px-4 mb-1">International Black Sea University<i class="fa fa-arrow-right"></i></a>
+                        <a href="#" class="btn btn-primary rounded-pill py-2 px-4 mb-1">Batumi Shota Rustaveli State University<i class="fa fa-arrow-right"></i></a>
+                        <a href="#" class="btn btn-primary rounded-pill py-2 px-4 mb-1">Georgian National University<i class="fa fa-arrow-right"></i></a>
+                        <a href="#" class="btn btn-primary rounded-pill py-2 px-4 mb-1">Grigol Robakidze University<i class="fa fa-arrow-right"></i></a>
+                        <a href="#" class="btn btn-primary rounded-pill py-2 px-4 mb-1">TBILISI MEDICAL ACADEMY<i class="fa fa-arrow-right"></i></a>
+                        
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4" style="border-radius: 10px;">
+                        <div class="d-inline-flex align-items-center justify-content-center  rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            <img src="/static/img/M-flag.svg" alt="" style="width: 100%;height: 100%;border-radius: 50%;">
+                        </div>
+                        <h5 class="mt-4">Malta</h5>
+                        <hr class="w-25 mx-auto bg-primary mb-1">
+                        <hr class="w-50 mx-auto bg-primary mt-0">
+                        <p class="mb-0"></p>
+                        <a href="#" class="btn btn-primary rounded-pill py-2 px-4 mb-1">INTERNATIONAL EUROPEAN UNIVERSITY<i class="fa fa-arrow-right"></i></a>
+                        
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4" style="border-radius: 10px;">
+                        <div class="d-inline-flex align-items-center justify-content-center  rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            <img src="static/img/russ-flag.png" alt="" style="width: 100%;height: 100%;border-radius: 50%;">
+                        </div>
+                        <h5 class="mt-4">Russia</h5>
+                        <hr class="w-25 mx-auto bg-primary mb-1">
+                        <hr class="w-50 mx-auto bg-primary mt-0">
+                        <p class="mb-0"></p>
+                        <a href="#" class="btn btn-primary rounded-pill py-2 px-4 mb-1">KAZAN STATE MEDICAL UNIVERSITY<i class="fa fa-arrow-right"></i></a>
+                        <a href="#" class="btn btn-primary rounded-pill py-2 px-4 mb-1">Kemerova State Medical University<i class="fa fa-arrow-right"></i></a>
+                        <a href="#" class="btn btn-primary rounded-pill py-2 px-4 mb-1">FEFU - Far Eastern Federal University<i class="fa fa-arrow-right"></i></a>
+                        <a href="#" class="btn btn-primary rounded-pill py-2 px-4 mb-1">MEPHI OBNINSK University<i class="fa fa-arrow-right"></i></a>
+                        <a href="#" class="btn btn-primary rounded-pill py-2 px-4 mb-1">MEPHI MOSCOW UNIVERSITY<i class="fa fa-arrow-right"></i></a>
+                        <a href="#" class="btn btn-primary rounded-pill py-2 px-4 mb-1">Krasnoyarsk State Medical University<i class="fa fa-arrow-right"></i></a>
+                        <a href="#" class="btn btn-primary rounded-pill py-2 px-4 mb-1">Bashkir State Medical University<i class="fa fa-arrow-right"></i></a>
+                        <a href="#" class="btn btn-primary rounded-pill py-2 px-4 mb-1">Kazan Federal university<i class="fa fa-arrow-right"></i></a>
+                        <a href="#" class="btn btn-primary rounded-pill py-2 px-4 mb-1">Syktyvkar State University<i class="fa fa-arrow-right"></i></a>
+                        
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4" style="border-radius: 10px;">
+                        <div class="d-inline-flex align-items-center justify-content-center  rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            <img src="static/img/n-1.png" alt="" style="width: 100%;height: 100%;border-radius: 50%;">
+                        </div>
+                        <h5 class="mt-4">Malaysia</h5>
+                        <hr class="w-25 mx-auto bg-primary mb-1">
+                        <hr class="w-50 mx-auto bg-primary mt-0">
+                        <p class="mb-0"></p>
+                        <a href="#" class="btn btn-primary rounded-pill py-2 px-4 mb-1">MAHSA University <i class="fa fa-arrow-right"></i></a>
+                        
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4" style="border-radius: 10px;">
+                        <div class="d-inline-flex align-items-center justify-content-center  rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            <img src="static/img/saint kitts.jpg" alt="" style="width: 100%;height: 100%;border-radius: 50%;">
+                        </div>
+                        <h5 class="mt-4">ST KITTS</h5>
+                        <hr class="w-25 mx-auto bg-primary mb-1">
+                        <hr class="w-50 mx-auto bg-primary mt-0">
+                        <p class="mb-0"></p>
+                        <a href="#" class="btn btn-primary rounded-pill py-2 px-4 mb-1"> Windsor University School Of Medicine<i class="fa fa-arrow-right"></i></a>
+                        
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4" style="border-radius: 10px;">
+                        <div class="d-inline-flex align-items-center justify-content-center  rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            <img src="static/img/cs-flag.png" alt="" style="width: 100%;height: 100%;border-radius: 50%;">
+                        </div>
+                        <h5 class="mt-4">CENTRAL AMERICA</h5>
+                        <hr class="w-25 mx-auto bg-primary mb-1">
+                        <hr class="w-50 mx-auto bg-primary mt-0">
+                        <p class="mb-0"></p>
+                        <a href="#" class="btn btn-primary rounded-pill py-2 px-4 mb-1">UNIVERSITY<i class="fa fa-arrow-right"></i></a>
+                        
+    
+                    </div>
+                </div>
+                
+            <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="position-relative border border-primary pt-5 pb-4 px-4" style="border-radius: 10px;">
+                    <div class="d-inline-flex align-items-center justify-content-center  rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                        <img src="static/img/kyrgy-flag.webp" alt="" style="width: 100%;height: 100%;border-radius: 50%;">
+                    </div>
+                    <h5 class="mt-4">KYRGYZSTAN</h5>
+                    <hr class="w-25 mx-auto bg-primary mb-1">
+                    <hr class="w-50 mx-auto bg-primary mt-0">
+                    <p class="mb-0"></p>
+                    <a href="#" class="btn btn-primary rounded-pill py-2 px-4 mb-1">UNIVERSITY<i class="fa fa-arrow-right"></i></a>
+
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="position-relative border border-primary pt-5 pb-4 px-4" style="border-radius: 10px;">
+                    <div class="d-inline-flex align-items-center justify-content-center  rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                        <img src="static/img/KAZAK-flag.jpg" alt="" style="width: 100%;height: 100%;border-radius: 50%;">
+                    </div>
+                    <h5 class="mt-4">KAZAKHSTAN</h5>
+                    <hr class="w-25 mx-auto bg-primary mb-1">
+                    <hr class="w-50 mx-auto bg-primary mt-0">
+                    <p class="mb-0"></p>
+                    
+                    <a href="#" class="btn btn-primary rounded-pill py-2 px-4 mb-1">International Medical School<i class="fa fa-arrow-right"></i></a>
+                    
+
+                </div>
+            </div>
+
+            
+            <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="position-relative border border-primary pt-5 pb-4 px-4" style="border-radius: 10px;">
+                    <div class="d-inline-flex align-items-center justify-content-center  rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                        <img src="static/img/philiphines.webp" alt="" style="width: 100%;height: 100%;border-radius: 50%;">
+                    </div>
+                    <h5 class="mt-4">PHILIPPINES</h5>
+                    <hr class="w-25 mx-auto bg-primary mb-1">
+                    <hr class="w-50 mx-auto bg-primary mt-0">
+                    <p class="mb-0"></p>
+                    <a href="#" class="btn btn-primary rounded-pill py-2 px-4 mb-1">Our Lady of Fatima University Valenzuela City<i class="fa fa-arrow-right"></i></a>
+                    <a href="#" class="btn btn-primary rounded-pill py-2 px-4 mb-1">Davao Medical <i class="fa fa-arrow-right"></i></a>
+                    <a href="#" class="btn btn-primary rounded-pill py-2 px-4 mb-1">AMA School of Medicine<i class="fa fa-arrow-right"></i></a>
+                    
+
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="position-relative border border-primary pt-5 pb-4 px-4" style="border-radius: 10px;">
+                    <div class="d-inline-flex align-items-center justify-content-center  rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                        <img src="static/img/china.png" alt="" style="width: 100%;height: 100%;border-radius: 50%;">
+                    </div>
+                    <h5 class="mt-4">CHINA</h5>
+                    <hr class="w-25 mx-auto bg-primary mb-1">
+                    <hr class="w-50 mx-auto bg-primary mt-0">
+                    <p class="mb-0"></p>
+                    <a href="#" class="btn btn-primary rounded-pill py-2 px-4 mb-1">UNIVERSITY<i class="fa fa-arrow-right"></i></a>
+                    
+
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="position-relative border border-primary pt-5 pb-4 px-4" style="border-radius: 10px;">
+                    <div class="d-inline-flex align-items-center justify-content-center  rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                        <img src="static/img/veit-flag.jpg" alt="" style="width: 100%;height: 100%;border-radius: 50%;">
+                    </div>
+                    <h5 class="mt-4">VIETNAM</h5>
+                    <hr class="w-25 mx-auto bg-primary mb-1">
+                    <hr class="w-50 mx-auto bg-primary mt-0">
+                    <p class="mb-0"></p>
+                    <a href="#" class="btn btn-primary rounded-pill py-2 px-4 mb-1">Hanoi Medical University<i class="fa fa-arrow-right"></i></a>
+                    <a href="#" class="btn btn-primary rounded-pill py-2 px-4 mb-1">	Hanoi Medical University	<i class="fa fa-arrow-right"></i></a>
+<a href="#" class="btn btn-primary rounded-pill py-2 px-4 mb-1">	Ho Chi Minh City University	<i class="fa fa-arrow-right"></i></a>
+<a href="#" class="btn btn-primary rounded-pill py-2 px-4 mb-1">	Vietnam Military Medical University	<i class="fa fa-arrow-right"></i></a>
+<a href="#" class="btn btn-primary rounded-pill py-2 px-4 mb-1">	Hue University	<i class="fa fa-arrow-right"></i></a>
+<a href="#" class="btn btn-primary rounded-pill py-2 px-4 mb-1">	Hai Phong University	<i class="fa fa-arrow-right"></i></a>
+<a href="#" class="btn btn-primary rounded-pill py-2 px-4 mb-1">	Pham Ngoc Thach University	<i class="fa fa-arrow-right"></i></a>
+<a href="#" class="btn btn-primary rounded-pill py-2 px-4 mb-1">	Thai Binh University	<i class="fa fa-arrow-right"></i></a>
+<a href="#" class="btn btn-primary rounded-pill py-2 px-4 mb-1">	Thai Nguyen Medical University	<i class="fa fa-arrow-right"></i></a>
+
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="position-relative border border-primary pt-5 pb-4 px-4" style="border-radius: 10px;">
+                    <div class="d-inline-flex align-items-center justify-content-center  rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                        <img src="static/img/nepal.png" alt="" style="width: 100%;height: 100%;border-radius: 50%;">
+                    </div>
+                    <h5 class="mt-4">Nepal</h5>
+                    <hr class="w-25 mx-auto bg-primary mb-1">
+                    <hr class="w-50 mx-auto bg-primary mt-0">
+                    <p class="mb-0"></p>
+                    <a href="#" class="btn btn-primary rounded-pill py-2 px-4 mb-1"><i class="fa fa-arrow-right"></i></a>
+                    
+
+                </div>
+            </div>
+
+
+            </div>
+        
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Footer Start -->
+    {% block footer %}
+    {% include "footer.html" %}
+    {% endblock %}
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/easing.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/waypoints.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/moment.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/moment-timezone.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/tempusdominus-bootstrap-4.min.js') }}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>

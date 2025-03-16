@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blue Chip</title>
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+        <meta http-equiv="Cache-control" content="no-cache">
+        <!-- Favicon -->
+        <link rel="icon" href="{{ url_for('static', filename='img/logo.jpg') }}">
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+    
+        <!-- Icon Font Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+        <!-- Libraries Stylesheet -->
+        <link href="{{ url_for('static', filename='css/animate.min.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='css/owl.carousel.min.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='css/tempusdominus-bootstrap-4.min.css') }}" rel="stylesheet" >
+       
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='css/style.css') }}"  rel="stylesheet">
+    </head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+
+
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+        {% block navbar %}
+        {% include "navbar.html" %}
+        {% endblock %}
+
+
+        <div class="container-fluid bg-primary py-5 mb-5 hero-header01">
+            <div class="container py-5">
+                <div class="row justify-content-center py-5">
+                    <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+                    <h2 class="display-3 text-white animated slideInDown">Best EMRIC Coaching in Chennai-bengaluru-kerala-coimbatore-mumbai</h2>
+                        <nav aria-label="breadcrumb">
+                         
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+         <!-- Booking Start -->
+         <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s" >
+            <div class="container" >
+                <div class="text-center">
+                            
+                    <h1 class="mb-5" style="color: black;">Acadamic Training</h1>
+                </div>
+                <div class="booking p-5" style="border-radius: 30px;">
+                    
+                    <div class="row g-5 align-items-center">
+                     
+                        <p > <li style="color: white;">The Emergency Medical Responder Instructor Course (EMRIC) is designed to equip individuals with the skills necessary to teach emergency medical response techniques to others. It focuses on building foundational knowledge in medical emergencies, providing instructors with both the technical expertise and teaching strategies to effectively train responders in life-saving procedures.</li> <br>
+                            <li style="color: white;">The EMRIC curriculum covers a broad range of topics essential for emergency medical care. This includes patient assessment, airway management, CPR, trauma response, and dealing with medical emergencies like heart attacks, strokes, and diabetic crises. Instructors are trained not only on the procedures themselves but also on how to effectively communicate and demonstrate these skills to students in a classroom or practical setting.</li><br>
+                        
+                        <li style="color: white;">Upon completion, participants earn certification as Emergency Medical Responder Instructors, allowing them to teach courses like basic life support (BLS) or first aid. This course is ideal for healthcare professionals, firefighters, law enforcement officers, or anyone looking to advance their career in emergency services by becoming a certified instructor. The training emphasizes hands-on practice, ensuring that instructors can confidently guide students in real-world emergency scenarios.</li></p>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Booking Start -->
+
+
+           <!-- Package Start -->
+           <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="section-title bg-white text-center text-primary1 px-3">Timeline</h6>
+                    <h1 class="mb-5"></h1>
+                </div>
+                <div class="timeline">
+                    <ul>
+                    <li>
+                        <div class="content">
+                            <h3>Introduction to Emergency Medicine</h3>
+                        <h6 style="color: #382e77;">History and evolution of emergency medicine</h6>
+                        <h6 style="color: #382e77;">Overview of emergency care systems</h6>
+                        
+                         
+                        </div>
+                        <div class="time">
+                        <h4 style="color: White;">Days</h4>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="content">
+                        <h3>Clinical Assessment</h3>
+                     
+                        <h6 style="color: #382e77;">Patient triage and assessment</h6>
+                        <h6 style="color: #382e77;">Vital signs monitoring</h6>
+                        <h6 style="color: #382e77;">History taking and physical examination</h6>
+                    
+                        </div>
+                        <div class="time">
+                        <h4 style="color: white;">Days</h>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="content">
+                        <h3>Common Emergencies</h3>
+                        <h6 style="color: #382e77;">Cardiac emergencies</h6>
+                        <h6 style="color: #382e77;">Respiratory emergencies</h6>
+                        <h6 style="color: #382e77;">Neurological emergencies</h6>
+                        <h6 style="color: #382e77;">Trauma assessment and management</h6>
+                       
+                        </div>
+                        <div class="time">
+                        <h4 style="color: white;">Days</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content">
+                        <h3>Advanced Life Support</h3>
+                        <h6 style="color: #382e77;">Basic Life Support (BLS)</h6>
+                        <h6 style="color: #382e77;">Advanced Cardiac Life Support (ACLS)</h6>
+                        <h6 style="color: #382e77;">Pediatric Advanced Life Support (PALS)</h6>
+                        
+                       
+                        </div>
+                        <div class="time">
+                        <h4 style="color: white;">Days</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content">
+                        <h3>Procedures in Emergency Medicine</h3>
+                        <h6 style="color: #382e77;">Airway management techniques</h6>
+                        <h6 style="color: #382e77;">Venous access and fluid resuscitation</h6>
+                        <h6 style="color: #382e77;">Wound care and suturing</h6>
+                        <h6 style="color: #382e77;">Splinting and casting</h6>
+                       
+                        </div>
+                        <div class="time">
+                        <h4 style="color: white;">Days</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content">
+                        <h3>Pharmacology in Emergency Medicine</h3>
+                        <h6 style="color: #382e77;">Common emergency medications</h6>
+                        <h6 style="color: #382e77;">Dosage calculations</h6>
+                        <h6 style="color: #382e77;">Drug interactions and contraindications</h6>
+                       
+                        </div>
+                        <div class="time">
+                        <h4 style="color: white;">Days</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content">
+                        <h3>Research Methodologies</h3>
+                        <h6 style="color: #382e77;">Introduction to research design</h6>
+                        <h6 style="color: #382e77;">Data collection and analysis</h6>
+                        <h6 style="color: #382e77;">Ethical considerations in emergency medicine research</h6>
+                       
+                        </div>
+                        <div class="time">
+                        <h4 style="color: white;">Days</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content">
+                        <h3>Case Studies and Simulation</h3>
+                        <h6 style="color: #382e77;">Real-life case scenarios</h6>
+                        <h6 style="color: #382e77;">Simulation training for emergency situations</h6>
+                        <h6 style="color: #382e77;">Team dynamics and communication in emergencies</h6>
+                       
+                        </div>
+                        <div class="time">
+                        <h4 style="color: white;">Days</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content">
+                        <h3>Disaster Management</h3>
+                        <h6 style="color: #382e77;">Principles of disaster response</h6>
+                        <h6 style="color: #382e77;">Triage in mass casualty incidents</h6>
+                        <h6 style="color: #382e77;">Emergency preparedness planning</h6>
+                       
+                        </div>
+                        <div class="time">
+                        <h4 style="color: white;">Days</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content">
+                        <h3> Quality Improvement in Emergency Care</h3>
+                        <h6 style="color: #382e77;">Performance metrics and evaluation</h6>
+                        <h6 style="color: #382e77;">Patient safety initiatives</h6>
+                        <h6 style="color: #382e77;">Continuous professional development</h6>
+                       
+                        </div>
+                        <div class="time">
+                        <h4 style="color: white;">Days</h4>
+                        </div>
+                    </li>
+                    
+                
+                    <div style="clear:both;"></div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Package End -->
+
+        <!-- Table start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s" >
+        <div class="container" >
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Exam pattern</h6>
+                <h1 class="mb-5">The following table shows the EMRIC exam pattern</h1>
+            </div>
+            
+                <div class="row g-5 align-items-center">
+                    <div class="table-responsive">
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th scope="col">Category</th>
+                              <th scope="col">Description</th>
+                              
+                           
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="noBorder">Test Format</td>
+                              <td class="noBorder">Written Examination (MCQs) and Practical Assessments</td>
+                           
+                           
+                            </tr>
+                            <tr>
+                                <td class="noBorder">Question Type</td>
+                                <td class="noBorder">Multiple Choice Questions (MCQs), Short Answer Questions, and Practical Scenario</td>
+                        
+                            
+                            </tr>
+                            <tr>
+                                <td class="noBorder">Number of Questions</td>
+                                <td class="noBorder">100 - 150 questions (varies by profession)</td>
+                                
+                             
+                            </tr>
+                            <tr>
+                                <td class="noBorder">Exam Duration</td>
+                                <td class="noBorder">Typically 2-4 hours, depending on the format and institution</td>
+                              
+                               
+                            </tr>
+                            <tr>
+                                <td class="noBorder">Pass Score</td>
+                                <td class="noBorder">Typically around 70% for both written and practical components</td>
+                              
+                               
+                            </tr>
+                         
+                         
+                          </tbody>
+                        </table>
+                      </div>
+                </div>
+            
+        </div>
+    </div>
+     <!-- Table End -->
+
+
+
+
+
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Networks</h6>
+                <h1 class="mb-5"> Our Global Networks</h1>
+            </div>
+            <div class="Slide-container h-100">
+                <div class="row align-items-center h-100">
+                  <div class="container rounded">
+                   
+                    <div class="slider">
+                      <div class="logos">
+                        <i class=""><img src="img/n-1.png" alt="img" style="width: 10%;height: 10%;"></i>
+                        <i class=""><img src="img/n-2.png" alt="img" style="width: 10%;height: 10%;"></i>
+                        <i class=""><img src="img/n-3.png" alt="img" style="width: 10%;height: 10%;"></i>
+                        <i class=""><img src="img/n-4.png" alt="img" style="width: 10%;height: 10%;"></i>
+                        <i class=""><img src="img/n-5.png" alt="img" style="width: 10%;height: 10%;"></i>
+                        <i class=""><img src="img/n-6.png" alt="img" style="width: 10%;height: 10%;"></i>
+                        <i class=""><img src="img/n-7.png" alt="img" style="width: 10%;height: 10%;"></i>
+                        <i class=""><img src="img/n-8.png" alt="img" style="width: 10%;height: 10%;"></i>
+                        <i class=""><img src="img/n-9.png" alt="img" style="width: 10%;height: 10%;"></i>
+                      </div>
+                      <div class="logos">
+                        <i class=""><img src="img/n-1.png" alt="img" style="width: 10%;height: 10%;"></i>
+                        <i class=""><img src="img/n-2.png" alt="img" style="width: 10%;height: 10%;"></i>
+                        <i class=""><img src="img/n-3.png" alt="img" style="width: 10%;height: 10%;"></i>
+                        <i class=""><img src="img/n-4.png" alt="img" style="width: 10%;height: 10%;"></i>
+                        <i class=""><img src="img/n-5.png" alt="img" style="width: 10%;height: 10%;"></i>
+                        <i class=""><img src="img/n-6.png" alt="img" style="width: 10%;height: 10%;"></i>
+                        <i class=""><img src="img/n-7.png" alt="img" style="width: 10%;height: 10%;"></i>
+                        <i class=""><img src="img/n-8.png" alt="img" style="width: 10%;height: 10%;"></i>
+                        <i class=""><img src="img/n-9.png" alt="img" style="width: 10%;height: 10%;"></i>
+                      </div>
+                     
+                    </div>
+                  </div>
+                </div>
+              
+              </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+   
+
+
+
+   <!-- Footer Start -->
+   {% block footer %}
+   {% include "footer.html" %}
+   {% endblock %}
+   <!-- Footer End -->
+
+
+   <!-- Back to Top -->
+   <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+   <!-- JavaScript Libraries -->
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/easing.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/waypoints.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/moment.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/moment-timezone.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/tempusdominus-bootstrap-4.min.js') }}"></script>
+
+   <!-- Template Javascript -->
+   <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>

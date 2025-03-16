@@ -1,0 +1,3329 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blue Chip</title>
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+        <meta http-equiv="Cache-control" content="no-cache">
+        <!-- Favicon -->
+        <link rel="icon" href="{{ url_for('static', filename='img/logo.jpg') }}">
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+    
+        <!-- Icon Font Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+        <!-- Libraries Stylesheet -->
+        <link href="{{ url_for('static', filename='css/animate.min.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='css/owl.carousel.min.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='css/tempusdominus-bootstrap-4.min.css') }}" rel="stylesheet" >
+       
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='css/style.css') }}"  rel="stylesheet">
+    </head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+
+
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+        {% block navbar %}
+        {% include "navbar.html" %}
+        {% endblock %}
+
+        <div class="container-fluid bg-primary py-5 mb-5 hero-header3">
+            <div class="container py-5">
+                <div class="row justify-content-center py-5">
+                    <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+                        <h1 class="display-3 text-white animated slideInDown" style="  text-shadow: 1px 1px 2px #000000;">Study Destination in USA</h1>
+     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+        <!-- About Md  -->
+<div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Why Study in the USA?</h6>
+                <h1 class="mb-5">USA</h1>
+            </div>
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute w-100 h-100" src="{{ url_for('static', filename='img/usa.jpg') }}" alt="" style="object-fit: cover;border-radius: 10px;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+      
+                 <p>
+                    Studying in the United States offers a world-class education with opportunities for personal and professional growth. The U.S. is home to many top-ranking universities and colleges known for their academic excellence, innovative research, and diverse student body. Here are key reasons why international students choose the USA for higher education:
+                 </p>
+                 <li>High-Quality Education: The U.S. offers a vast array of academic programs, with many universities ranked among the best in the world.</li>
+                 <li>Diverse Culture: You’ll experience a melting pot of cultures, enhancing personal growth and broadening global perspectives.</li>
+                 <li>Cutting-Edge Research and Technology: Many U.S. universities lead the world in scientific research, innovation, and technology.</li>
+                 <li>Opportunities for Work and Internships: International students can work part-time during their studies and explore internships that enhance their career prospects.</li>
+                 <li>Flexibility in Course Selection: U.S. institutions provide flexibility in choosing subjects, allowing students to design their academic path based on their interests.</li>
+                 <li>Global Recognition: A degree from a U.S. institution is recognized worldwide and adds credibility to your academic and professional qualifications.</li>
+
+              
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- About Md -->
+
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Budget of Studying in the USA</h6>
+                <h1 class="mb-5"></h1>
+            </div>
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <p>
+                            Here is a division of U.S. colleges based on their annual tuition fees:
+                         </p>
+                         <h4>Affordable Options for Studying in the USA (Under $20,000 per Year):</h4>
+                         <ul>
+                           <li>University of North Carolina at Chapel Hill</li>
+                           <li>University of Wyoming</li>
+                           <li>California State University</li>
+                           <li>University of Texas at Austin</li>
+                           <li>University of Alabama</li>
+                         </ul>
+                         
+                         <h4>Great Value Colleges (Tuition Between $20,000 - $40,000 per Year):</h4>
+                         <ul>
+                           <li>University of Florida</li>
+                           <li>Penn State University</li>
+                           <li>University of Wisconsin-Madison</li>
+                           <li>University of Washington</li>
+                           <li>Michigan State University</li>
+                         </ul>
+                         
+                         <h4>Top-Tier Universities with Premium Programs ($40,000+ per Year):</h4>
+                         <ul>
+                           <li>Harvard University</li>
+                           <li>Stanford University</li>
+                           <li>Columbia University</li>
+                           <li>Massachusetts Institute of Technology (MIT)</li>
+                           <li>Yale University</li>
+                         </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+      
+                 <p>
+                    The cost of studying in the USA can vary widely depending on the university, program, and location. On average, tuition fees for international students can range from $20,000 to $70,000 per year. Here’s a breakdown:
+                 </p>
+                 <h4>Tuition Fees:</h4>
+                 <ul>
+                   <li>Public universities: $20,000 to $40,000 per year</li>
+                   <li>Private universities: $30,000 to $70,000 per year</li>
+                 </ul>
+                 
+                 <h4>Living Expenses:</h4>
+                 <ul>
+                   <li>Rent: $500 to $1,500 per month (depending on location)</li>
+                   <li>Food: $300 to $600 per month</li>
+                   <li>Health Insurance: $500 to $1,000 per year</li>
+                   <li>Books and Supplies: $500 to $1,000 per year</li>
+                   <li>Miscellaneous Expenses: $100 to $300 per month</li>
+                 </ul>
+                 
+
+              
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="section-title bg-white text-center text-primary px-3">Top Preferred Courses in the USA</h6>
+            <h1 class="mb-5"></h1>
+        </div>
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                <div class="position-relative h-100">
+                    <h4>Top Preferred Courses in the USA for Higher Education (Bachelor’s & Master’s):</h4>
+<p>The USA offers a wide range of popular courses for both Bachelor’s and Master’s degrees. Some of the top choices for international students include:</p>
+
+<h5>For Bachelor's:</h5>
+<ul>
+  <li>Computer Science and IT</li>
+  <li>Business Administration and Management</li>
+  <li>Engineering (Mechanical, Electrical, Civil)</li>
+  <li>Biology and Life Sciences</li>
+  <li>Psychology</li>
+  <li>Economics</li>
+  <li>Social Sciences and Humanities</li>
+  <li>Architecture</li>
+</ul>
+
+<h5>For Master's:</h5>
+<ul>
+  <li>MBA (Master of Business Administration)</li>
+  <li>MS in Computer Science</li>
+  <li>MS in Engineering (e.g., Civil, Electrical, Mechanical)</li>
+  <li>MS in Data Science and Analytics</li>
+  <li>Master's in Public Health (MPH)</li>
+  <li>Master's in International Relations or Political Science</li>
+  <li>Master's in Education</li>
+  <li>Master's in Environmental Science</li>
+</ul>
+
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+  
+                <h4>For Medicine (Bachelor's, Master’s, and Medical Degrees):</h4>
+
+                <h5>Pre-Med (Undergraduate):</h5>
+                <p>Students can choose to pursue a Bachelor’s degree in fields like Biology, Chemistry, or Biochemistry as a precursor to medical school.</p>
+                
+                <h5>Medical School (MD or DO):</h5>
+                <p>The U.S. has some of the most prestigious medical schools offering MD (Doctor of Medicine) or DO (Doctor of Osteopathic Medicine) programs.</p>
+                <ul>
+                  <li>Harvard Medical School</li>
+                  <li>Johns Hopkins School of Medicine</li>
+                  <li>Stanford University School of Medicine</li>
+                  <li>Mayo Clinic Alix School of Medicine</li>
+                </ul>
+                
+                <h5>Master’s in Public Health (MPH):</h5>
+                <p>This degree is a great choice for those looking to work in health policy, epidemiology, or global health organizations.</p>
+                
+                <h5>Master’s in Nursing (MSN):</h5>
+                <p>U.S. institutions offer advanced programs for nurses to specialize in areas like nurse practitioner, nurse anesthetist, or clinical nurse specialist.</p>
+                
+                <h5>Master’s in Healthcare Administration (MHA):</h5>
+                <p>This program is ideal for those aiming for leadership roles in healthcare management, such as hospital administrators or healthcare policy analysts.</p>
+                
+                <h5>Physician Assistant Programs (PA):</h5>
+                <p>Physician assistants are in high demand in the U.S., and many students pursue this career through accredited programs.</p>
+                
+                <h5>Pharmacy (PharmD):</h5>
+                <p>The Doctor of Pharmacy (PharmD) degree prepares students for careers as pharmacists, which involves working in hospitals, clinics, or pharmaceutical companies.</p>
+                
+
+          
+                
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+        <!-- About Md  -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="section-title bg-white text-center text-primary px-3"> Expenses for International Students in the USA</h6>
+                    <br>
+                </div>
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                        <div class="position-relative h-100">
+                            <h4>For Medicine (Bachelor's, Master’s, and Medical Degrees):</h4>
+
+<h5>Pre-Med (Undergraduate):</h5>
+<p>Students can choose to pursue a Bachelor’s degree in fields like Biology, Chemistry, or Biochemistry as a precursor to medical school.</p>
+
+<h5>Medical School (MD or DO):</h5>
+<p>The U.S. has some of the most prestigious medical schools offering MD (Doctor of Medicine) or DO (Doctor of Osteopathic Medicine) programs.</p>
+<p>Top medical schools include:</p>
+<ul>
+  <li>Harvard Medical School</li>
+  <li>Johns Hopkins School of Medicine</li>
+  <li>Stanford University School of Medicine</li>
+  <li>Mayo Clinic Alix School of Medicine</li>
+</ul>
+
+<h5>Master’s in Public Health (MPH):</h5>
+<p>This degree is a great choice for those looking to work in health policy, epidemiology, or global health organizations.</p>
+
+<h5>Master’s in Nursing (MSN):</h5>
+<p>U.S. institutions offer advanced programs for nurses to specialize in areas like nurse practitioner, nurse anesthetist, or clinical nurse specialist.</p>
+
+<h5>Master’s in Healthcare Administration (MHA):</h5>
+<p>This program is ideal for those aiming for leadership roles in healthcare management, such as hospital administrators or healthcare policy analysts.</p>
+
+<h5>Physician Assistant Programs (PA):</h5>
+<p>Physician assistants are in high demand in the U.S., and many students pursue this career through accredited programs.</p>
+
+<h5>Pharmacy (PharmD):</h5>
+<p>The Doctor of Pharmacy (PharmD) degree prepares students for careers as pharmacists, which involves working in hospitals, clinics, or pharmaceutical companies.</p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+          
+                        <h4>Living Expenses for International Students in the USA:</h4>
+                        <p>
+                          The cost of living in the USA depends on the city or state you choose to study in. 
+                          On average, living expenses for international students can range from $10,000 to $20,000 per year. 
+                          Here’s a more detailed breakdown:
+                        </p>
+                        
+                        <h5>Accommodation:</h5>
+                        <ul>
+                          <li>On-campus housing: $5,000 to $10,000 per year</li>
+                          <li>Off-campus housing: $4,000 to $12,000 per year (varies by location)</li>
+                        </ul>
+                        
+                        <h5>Food:</h5>
+                        <ul>
+                          <li>Average monthly grocery expenses: $200 to $400</li>
+                          <li>Dining out: $5 to $15 per meal</li>
+                        </ul>
+                        
+                        <h5>Transportation:</h5>
+                        <ul>
+                          <li>Public transport: $50 to $100 per month</li>
+                          <li>Personal car (if applicable): Costs include gas, insurance, and maintenance, averaging $300+ per month</li>
+                        </ul>
+                        
+                        <h5>Utilities and Other Costs:</h5>
+                        <ul>
+                          <li>Internet, phone, and utilities (if renting off-campus): $100 to $300 per month</li>
+                        </ul>
+                        
+                        <h5>Entertainment and Miscellaneous:</h5>
+                        <ul>
+                          <li>Entertainment: $100 to $300 per month</li>
+                        </ul>
+                        
+                  
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- About Md -->
+
+        <!-- FAQ -->
+<div class="accordion">
+    <center><h1>Frequently Asked Questions</h1></center>
+    
+    <div class="accordion-item">
+        <input type="checkbox" id="accordion1">
+        <label for="accordion1" class="accordion-item-title">
+            <span class="icon"><i class="fa fa-question-circle"></i></span>Do I need a visa to study in the USA?
+        </label>
+        <div class="accordion-item-desc">
+            Yes, international students require an F-1 visa for academic studies. You will need to be accepted into a SEVP-approved institution and provide proof of sufficient financial support.
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <input type="checkbox" id="accordion2">
+        <label for="accordion2" class="accordion-item-title">
+            <span class="icon"><i class="fa fa-question-circle"></i></span>Can I work while studying in the USA?
+        </label>
+        <div class="accordion-item-desc">
+            Yes, F-1 students can work up to 20 hours per week during the academic semester and full-time during breaks on campus. Off-campus work may be available after one year of study under certain conditions.
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <input type="checkbox" id="accordion3">
+        <label for="accordion3" class="accordion-item-title">
+            <span class="icon"><i class="fa fa-question-circle"></i></span>What are the admission requirements for international students?
+        </label>
+        <div class="accordion-item-desc">
+            Admission requirements vary by university but generally include proof of English proficiency (TOEFL/IELTS), standardized test scores (SAT/ACT for undergraduates, GRE/GMAT for graduates), letters of recommendation, and a statement of purpose.
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <input type="checkbox" id="accordion4">
+        <label for="accordion4" class="accordion-item-title">
+            <span class="icon"><i class="fa fa-question-circle"></i></span>How can I find scholarships for international students?
+        </label>
+        <div class="accordion-item-desc">
+            Many universities offer scholarships for international students based on merit or financial need. Additionally, private organizations and government programs also provide funding opportunities.
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <input type="checkbox" id="accordion5">
+        <label for="accordion5" class="accordion-item-title">
+            <span class="icon"><i class="fa fa-question-circle"></i></span>What is the student visa process like?
+        </label>
+        <div class="accordion-item-desc">
+            After receiving an admission letter from a U.S. institution, you can apply for an F-1 visa at a U.S. embassy or consulate in your home country. The process involves an interview, providing financial documents, and paying visa fees.
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <input type="checkbox" id="accordion6">
+        <label for="accordion6" class="accordion-item-title">
+            <span class="icon"><i class="fa fa-question-circle"></i></span>How safe is it to live and study in the USA?
+        </label>
+        <div class="accordion-item-desc">
+            The USA is generally safe for international students, though safety varies by location. It’s important to research your university’s campus safety policies and be aware of the local area.
+        </div>
+    </div>
+    
+</div>
+<!-- FAQ -->
+
+
+            <!-- Testimonial Start -->
+            <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="text-center">
+                    <h6 class="section-title bg-white text-center text-primary1 px-3">Testimonial</h6>
+                    <h1 class="mb-5">Our Clients Say!!!</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel position-relative">
+                    <div class="testimonial-item bg-white text-center border p-4" style="border-radius: 30px;">
+                        <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="{{ url_for('static', filename='img/logo.jpg') }}" style="width: 80px; height: 80px;">
+                        <h5 class="mb-0">Riya Sharma, Northern Arizona University (NAU)</h5>
+                        <p>State: Maharashtra</p>
+                        <p class="mb-0">My experience with Bluechip Services was incredible! The team guided me through every step of my application to NAU. The support for visa processing was seamless, and I felt well-prepared when I arrived in Flagstaff. The university’s campus is beautiful, and the faculty is very supportive. I’ve made lifelong friends here</p>
+                    </div>
+                    <div class="testimonial-item bg-white text-center border p-4" style="border-radius: 30px;">
+                        <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3"src="{{ url_for('static', filename='img/logo.jpg') }}" style="width: 80px; height: 80px;">
+                        <h5 class="mb-0">Aarav Patel, Kent State University</h5>
+                        <p>State: Gujarat</p>
+                        <p class="mt-2 mb-0">I can’t thank Bluechip enough for helping me get into Kent State for my Master’s in Fashion Design. They were thorough and prompt in answering my queries, which made the entire process less stressful. The university has a vibrant community, and I love the courses. I’m really enjoying my time here</p>
+                    </div>
+                    <div class="testimonial-item bg-white text-center border p-4" style="border-radius: 30px;">
+                        <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="{{ url_for('static', filename='img/logo.jpg') }}" style="width: 80px; height: 80px;">
+                        <h5 class="mb-0">Meera Kaur, Portland State University</h5>
+                        <p>State: Punjab</p>
+                        <p class="mt-2 mb-0">I enrolled in an MBA program at Portland State University, and I owe a huge thanks to Bluechip Services. They provided excellent counseling and assistance throughout the application process. The cultural diversity at PSU has enriched my learning experience. I feel well-equipped for my future career</p>
+                    </div>
+                    <div class="testimonial-item bg-white text-center border p-4" style="border-radius: 30px;">
+                        <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="{{ url_for('static', filename='img/logo.jpg') }}" style="width: 80px; height: 80px;">
+                        <h5 class="mb-0">Vikram Singh, University of Maryland Baltimore County</h5>
+                        <p>State: Rajasthan</p>
+                        <p class="mt-2 mb-0">My journey to the University of Maryland was smooth thanks to Bluechip Services. Their attention to detail made my visa process stress-free. UMBC has great research opportunities, and I am thriving in my Computer Science program. The faculty are very approachable</p>
+                    </div>
+                    <div class="testimonial-item bg-white text-center border p-4" style="border-radius: 30px;">
+                        <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3"src="{{ url_for('static', filename='img/logo.jpg') }}" style="width: 80px; height: 80px;">
+                        <h5 class="mb-0">Nisha Verma, Florida Atlantic University</h5>
+                        <p>State: Uttar Pradesh</p>
+                        <p class="mt-2 mb-0">I had a wonderful experience with Bluechip while applying for my Master’s at FAU. The staff were very knowledgeable and helped me find the right program. The campus life here is vibrant, and the professors genuinely care about student success. I highly recommend Bluechip</p>
+                    </div>
+                    <div class="testimonial-item bg-white text-center border p-4" style="border-radius: 30px;">
+                        <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="{{ url_for('static', filename='img/logo.jpg') }}" style="width: 80px; height: 80px;">
+                        <h5 class="mb-0">Rahul Mehta, Montana State University</h5>
+                        <p>State: Karnataka</p>
+                        <p class="mt-2 mb-0">Thanks to Bluechip, I successfully enrolled in a Master's program at Montana State University. Their guidance was invaluable, especially during the visa application process. The scenery here is breathtaking, and the education is top-notch. I couldn’t have done it without Bluechip</p>
+                    </div>
+                    <div class="testimonial-item bg-white text-center border p-4" style="border-radius: 30px;">
+                        <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="{{ url_for('static', filename='img/logo.jpg') }}" style="width: 80px; height: 80px;">
+                        <h5 class="mb-0">Sana Khan, University of Massachusetts Boston</h5>
+                        <p>State: West Bengal</p>
+                        <p class="mt-2 mb-0">My experience with Bluechip Services was fantastic! They provided personalized assistance for my application to UMass Boston for my MBA. The university has a diverse student body, and I’ve made amazing connections. The entire process was smooth and well-organized."</p>
+                    </div>
+                    <div class="testimonial-item bg-white text-center border p-4" style="border-radius: 30px;">
+                        <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="{{ url_for('static', filename='img/logo.jpg') }}" style="width: 80px; height: 80px;">
+                        <h5 class="mb-0">Karan Joshi, New Jersey Institute of Technology</h5>
+                        <p>State: Haryana</p>
+                        <p class="mt-2 mb-0">Bluechip made my dream of studying at NJIT a reality! Their support during the application and visa process was superb. I am enjoying my Engineering program immensely. The faculty is approachable, and the campus is filled with opportunities. Highly recommend</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        
+        <div class="container">
+           
+            <div class="row g-4">
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s"  >
+                    <div class="service-item rounded pt-3" style="border-radius: 50px;">
+                        <div class="p-4" >
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of California Berkeley Extension</h5>
+                          
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s" >
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>(Shorelight) Johns Hopkins University</h5>
+                           
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of Wisconsin–Madison Division of Continuing Studies</h5>
+                           
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of California, Irvine Division of Continuing Education</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>(INTO) University of Arizona</h5>
+                           
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>(Kaplan) Arizona State University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>(Shorelight) University of Utah</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Virginia Tech Language and Culture Institute</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>(INTO) UMass Amherst</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Colorado State University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>(INTO) Oregon State University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of South Florida</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>(Kaplan) University of Connecticut</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>The University of Nebraska-Lincoln</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of California Riverside - College of Engineering</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of California Riverside Extension</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of California Riverside</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of Delaware</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of California, Santa Cruz, Silicon Valley Extension (Professional Education)</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Washington State University - Vancouver (USA) Campus</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Washington State University - Tri-Cities Campus</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Washington State University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>(INTO) University of Alabama at Birmingham</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of Kansas</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of Cincinnati</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of New Mexico</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Virginia Commonwealth University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>(INTO) The University of Oklahoma, Norman, Oklahoma</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>(Shorelight) University of South Carolina</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of Central Florida</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>(INTO) George Mason University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Worcester Polytechnic Institute</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Drexel University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>(Shorelight) Louisiana State University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Georgia State University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>(Shorelight) Florida International University, Florida</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Florida International University, Florida</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>(Shorelight) Auburn University, Alabama</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of North Texas - Frisco</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Oklahoma State University - Stillwater</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of North Texas</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of Albany, The State University of New York, Albany (SUNY Albany)</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of Louisville</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of New Hampshire</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of Nevada</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Rochester Institute of Technology</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Mississippi State University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of Wisconsin Milwaukee, Wisconsin</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>(INTO) Jefferson University, St, Philadelphia, Pennsylvania</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>(Shorelight) University of Illinois Chicago</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>(INTO) Saint Louis University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Northern Arizona University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Kent State University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Portland State University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>(Study Group) Florida Atlantic University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of Maryland Baltimore County</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Montana State University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>(Shorelight) University of Massachusetts Boston (UMass Boston)</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Lehigh University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of Idaho</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Ohio University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>New Jersey Institute of Technology</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>(Shorelight) American University Washington D.C.</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Miami University, Hamilton</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Miami University, Middletown</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of Toledo</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of Denver, Colorado (Daniel’s College of Business only)</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Missouri University of Science and Technology</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Miami University, Oxford</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>East Carolina University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of Massachusetts Lowell (UMass Lowell)</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Texas State University - Round Rock</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Marquette University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>The University of Memphis</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>San Jose State University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Texas State University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>San Francisco State University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Southern Illinois University Carbondale</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>California State University, Northridge</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Florida Institute Of Technology</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Nova Southeastern University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>DePaul University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Wright State University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of Missouri–St. Louis (UMSL)</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Rowan University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>(INTO) Montclair State University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of Colorado Colorado Springs</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>(INTO) Hofstra University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>(Shorelight) University of Dayton</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Central Michigan University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>California State University, Sacramento</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Kennesaw State University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of Nebraska at Omaha</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>(Study Group) Western Washington University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Ball State University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of Massachusetts Dartmouth (UMass Dartmouth)</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Embry Riddle Aeronautical University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>(Shorelight) Cleveland State University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>(Study Group) James Madison University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>California State University, Los Angeles</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>California State University, Los Angeles - Extension</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Summer Discovery</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Texas A & M University - Corpus Christi</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Yeshiva University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of South Alabama</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Duquesne University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of Tulsa</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of South Dakota</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Middle Tennessee State University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>(Navitas) Queens College</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>California State University, Fresno</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Wichita State University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Grand Valley State University, Michigan</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Western Kentucky University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>(Kaplan) Pace University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Marshall University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>California State Polytechnic University, Pomona (College of the Extended University)</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Southern Illinois University Edwardsville</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>(Shorelight) University of the Pacific</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Missouri State University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Eastern Michigan University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Sonoma State University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of Wisconsin-Eau Claire</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>California State University, East Bay</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Tennessee Tech University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>California State University, San Bernardino</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of Central Arkansas</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of St. Thomas</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>The State University of New York at New Paltz (SUNY New Paltz)</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>New York Institute of Technology</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>(Shorelight) Adelphi University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>(INTO) Suffolk University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Seattle University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>(INTO) Illinois State University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Claremont Graduate University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>(Study Group) Long Island University Post (LIU Post)</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>(Study Group) Long Island University Brooklyn (LIU Brooklyn)</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>California State University, Dominguez Hills</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Purdue University - Northwest</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Xavier University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Indiana University of Pennsylvania</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>The Catholic University of America</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>South Dakota School of Mines & Technology</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Texas A & M University - Kingsville</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>State University of New York Oswego (SUNY Oswego)</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>California State University, Bakersfield</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Arkansas State University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Weber State University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of Wisconsin–La Crosse</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Marist College</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Fairleigh Dickinson University (USA)</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of New Haven</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Valparaiso University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Youngstown State University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5> Simmons University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Western Illinois University - Quad Cities</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of Tampa</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Murray State University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Roosevelt University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>California State University, Stanislaus</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>(Study Group) University of Hartford</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Western New England University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Sacred Heart University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of Bridgeport</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Rider University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Southern Utah University, Cedar, Utah</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Western Illinois University - Macomb</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>The University of Scranton</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Webster University - (St. Louis, Missouri)</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Webster University - (San Antonio, Texas)</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Troy University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of Tennessee at Chattanooga</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of Michigan-Flint</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>California State University, Channel Islands</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University Of Central Oklahoma</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Pittsburg State University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Massachusetts College of Pharmacy and Health Sciences (MCPHS University)</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of Wisconsin-Stout</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Southeast Missouri State University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Lawrence Technological University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Auburn University at Montgomery</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Roger Williams University, Bristol, Rhode Island</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Truman State University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>(Shorelight) University of Illinois Springfield</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>(INTO) Drew University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>California Lutheran University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Governors State University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Marymount University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Western Oregon University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of South Carolina Upstate</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>California Baptist University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Saginaw Valley State University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Slippery Rock University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Dakota State University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Milwaukee School of Engineering</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of Colorado Denver</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Southern New Hampshire University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>State University of New York, Fredonia</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Midwestern State University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Johnson & Wales University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Whittier College</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>SUNY Polytechnic Institute</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Park University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Maryville University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Southwest Minnesota State University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>State University of New York, Geneseo (SUNY Geneseo)</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Oklahoma City University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Saint Mary's College of California</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Augustana University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>State University of New York at Plattsburgh (SUNY Plattsburgh)</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Hult International Business School Boston,San Francisco campus</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Texas Wesleyan University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>(Study Group) Lipscomb University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of Mary Hardin-Baylor</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Saint Leo University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Lewis University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Nebraska Wesleyan University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Savannah College of Art and Design - Savannah</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>The University of Findlay</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Bay Atlantic University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Savannah College of Art and Design - Atlanta</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>York College of Pennsylvania</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Franklin College</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Northwest Missouri State University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>New York Film Academy</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Santa Monica College</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>DeVry University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Franklin University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Academy of Art University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Lycoming College</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Golden Gate University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Santa Rosa Junior College</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Full Sail University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Dallas Baptist University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>College of Contra Costa - Diablo Valley College</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Mississippi College</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Green River College</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Santa Ana College</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Seattle Colleges</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>(INTO) New England College</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>South University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Northwood University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Central Methodist University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Northwest Executive Education - Northwood University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Shoreline Community College</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Foothill-De Anza College</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>McMurry University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Monroe College</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of Wisconsin-Superior</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Post University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Berkeley College, New Jersey</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Berkeley College, New York</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>City University of Seattle</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Felician University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Upper Iowa University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>New England Institute of Technology</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Rivier University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Trine University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Charleston Southern University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>San Mateo College of Silicon Valley</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Fisher College</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>William Jessup University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Missouri Southern State University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Woodbury University, Burbank, California</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Tiffin University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of the Potomac</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Finger Lakes Community College</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Midway University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>College of Contra Costa - Los Medanos College</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>College of Contra Costa - Contra Costa College</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Richard Bland College of William & Mary, Petersburg, Virginia</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Spartan College of Aeronautics and Technology (Only UG)</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Atlantis University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Westcliff University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Lawrence Technological University (Michigan) and Pune Institute of Business Management (Pune)</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Paier College</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Johnson & Wales University - Charlotte</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Ottawa University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Bryant University</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>University of North Florida</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Care Hope College</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>IPERC Academy Online</h5>
+                            
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+               
+             
+              
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+
+        
+
+    <!-- Footer Start -->
+    {% block footer %}
+    {% include "footer.html" %}
+    {% endblock %}
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/easing.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/waypoints.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/moment.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/moment-timezone.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/tempusdominus-bootstrap-4.min.js') }}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>

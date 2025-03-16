@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bluechip</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='log_css/style.css') }}">
+        <script>
+            // Function to show the alert if the login fails
+            function showError(message) {
+                alert(message);
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container clearfix">
+            <div class="form login">
+                <a class="logo" href="">
+                    <img src="{{ url_for('static', filename='img/logo.jpg') }}" alt="Logo" />
+                </a>
+                <form action="/login" method="POST">
+
+                    <p>
+                        <label>Username or email address<span>*</span></label>
+                        <input type="text" id="username" name="username" required>
+                    </p>
+
+                    <p>
+                        <label>Password<span>*</span></label>
+                        <input type="password" id="password" name="password" required>
+                    </p>
+
+                    <p>
+                        
+                        <center><input type="submit"  > </center>
+                    </p>
+                    
+                </form>
+            </div>
+            
+        </div>
+        {% if error %}
+        <script>
+            showError("{{ error }}");
+        </script>
+        {% endif %}
+    </body>
+</html>

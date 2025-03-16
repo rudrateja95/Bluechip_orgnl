@@ -1,0 +1,148 @@
+{% block navbar %}
+<nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            
+            
+    <a href="" class="navbar-brand p-0">
+    <div style="display: flex;flex-wrap: nowrap;">
+        <div> <h6 class="text-primary1 "><img src="{{ url_for('static', filename='img/logo.jpg') }}" alt="Logo" class="">
+        </h6></div>
+        <div style="margin-left: 10px;margin-top: 10px;" ><h6 style="color:black">Bluechip Services <br>
+        International Pvt.Ltd
+        </h6></div>
+    </div>
+        
+        <!-- <img src="img/logo.png" alt="Logo"> -->
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="fa fa-bars"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto py-0">
+            <a href="{{ url_for('index') }}" class="nav-item nav-link  font">Home</a>
+            <div class="nav-item dropdown">
+                <a href="about" class="nav-link dropdown-toggle font" data-bs-toggle="dropdown">About</a>
+                <div class="dropdown-menu m-0">
+                    <a href="{{ url_for('about') }}" class="dropdown-item">About-us</a>
+                    <a href="{{ url_for('services') }}" class="dropdown-item">Services</a>
+                    <a href="{{ url_for('gallery') }}" class="dropdown-item">Gallery</a>
+                    
+            
+                
+                </div>
+                <div class="dropdown-menu m-0">
+                    
+                </div>
+            </div>
+            
+            <a href="{{ url_for('mbbs_pg') }}" class="nav-item nav-link font">Study MBBS/PG</a>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle font" data-bs-toggle="dropdown">Study Destination</a>
+                <div class="dropdown-menu m-0" >
+                  <div style="display:flex;flexwrap:nowrap;">
+                    <div class="col-sm-6">
+
+
+                    <a href="usa" class="dropdown-item">USA</a>
+                    <a href="canada" class="dropdown-item">Malta</a>
+                    <a href="uk" class="dropdown-item">UK</a>
+                    <a href="Australia" class="dropdown-item">Australia</a>
+                    <a href="canada" class="dropdown-item">Canada</a>
+                    <a href="Turkey" class="dropdown-item">Turkey</a>
+                    <a href="Germani_web" class="dropdown-item">Germany</a>
+                    <a href="canada" class="dropdown-item">Latvia</a>
+                    <a href="malyasia" class="dropdown-item">Malaysia</a>
+                    <a href="newzealand" class="dropdown-item">New Zealand</a>
+                    <a href="dubai" class="dropdown-item">Dubai</a>
+                    <a href="finland" class="dropdown-item">Finland</a>
+                    <a href="france" class="dropdown-item">France</a>
+                    <a href="spainpg" class="dropdown-item">Spain</a>
+                    <a href="canada" class="dropdown-item">Singapore</a>
+                    <a href="canada" class="dropdown-item">Morocco</a>
+                    <a href="Europe" class="dropdown-item">Europe</a>
+                    </div>
+                    <div class="col-sm-6">
+                    <a href="ireland" class="dropdown-item">Ireland</a>
+                    <a href="switzerland" class="dropdown-item">Switzerland</a>
+                    <a href="cyprus" class="dropdown-item">Cyprus</a>
+                    <a href="hungary" class="dropdown-item">Hungary</a>
+                    <a href="poland" class="dropdown-item">Poland</a>
+                    <a href="hungary" class="dropdown-item">Georgia</a>
+                    <a href="canada" class="dropdown-item">Rusia</a>
+                    <a href="canada" class="dropdown-item">Saint Kitts</a>
+                    <a href="canada" class="dropdown-item">Central America</a>
+                    <a href="canada" class="dropdown-item">Vietnam</a>
+                    <a href="itali" class="dropdown-item">Italy</a>
+                    <a href="denmark" class="dropdown-item">Denmark</a>
+                    <a href="austria" class="dropdown-item">Austria</a>
+                    <a href="canada" class="dropdown-item">Philippines</a>
+                    <a href="canada" class="dropdown-item">Kazakhstan</a>
+                    <a href="canada" class="dropdown-item">Kyrgyzstan</a>
+                    <a href="london" class="dropdown-item">London</a>
+            
+                    </div>
+            
+                    </div>
+                </div>
+                
+            </div>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle font" data-bs-toggle="dropdown">Exam Prep.</a>
+                <div class="dropdown-menu m-0">
+                    <a href="https://bestscore.kaptest.com/6FNWBC" class="dropdown-item">USMLE</a>
+                    <a href="ielts" class="dropdown-item">IELTS</a>
+                    <a href="tofel" class="dropdown-item">TOFEL</a>
+                    <a href="pte" class="dropdown-item"> PTE</a>
+                    <a href="oet" class="dropdown-item">OET</a>
+                    <a href="cbt" class="dropdown-item">CBT</a>
+                    <a href="dha" class="dropdown-item">DHA</a>
+                    <a href="haad" class="dropdown-item">HAAD</a>
+                    <a href="prometric" class="dropdown-item">prometric</a>
+                    <a href="emric" class="dropdown-item">EMRIC</a>
+                    <a href="dualingo" class="dropdown-item">Duolingo</a>
+                    <a href="germani" class="dropdown-item">Germany</a>
+                    <a href="spain" class="dropdown-item">Spain</a>
+                    
+                </div>
+                
+            </div>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle font " data-bs-toggle="dropdown">Nurses Abroad</a>
+                <div class="dropdown-menu m-0">
+                    <a href="n-germany" class="dropdown-item">Germany</a>
+                    <a href="n-georgia" class="dropdown-item">Georgia</a>
+                    <a href="n-usa" class="dropdown-item">USA</a>
+                    <a href="n-uk" class="dropdown-item">UK</a>
+                    <a href="n-malta" class="dropdown-item">Malta</a>
+                    <a href="n-ireland" class="dropdown-item">Ireland</a>
+                </div>
+                
+        </div>
+        <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle font " data-bs-toggle="dropdown">India</a>
+            <div class="dropdown-menu m-0">
+            <a href="karnataka" class="dropdown-item">karntaka</a>
+            <a href="tamilnadu" class="dropdown-item">Tamil Nadu</a>
+            <a href="" class="dropdown-item">Kerala</a>
+            <a href="" class="dropdown-item">Hyderabad</a>
+            <a href="" class="dropdown-item">Mumbai</a>
+            <a href="" class="dropdown-item">Delhi</a>
+            <a href="" class="dropdown-item">Andhra Pradesh</a>
+            <a href="" class="dropdown-item">Madhya Pradesh</a>
+            <a href="" class="dropdown-item">Ahmadhabadh</a>
+            <a href="" class="dropdown-item">Kanpur</a>
+            <a href="" class="dropdown-item">Nepal</a>
+            <a href="" class="dropdown-item">Nagpur</a>
+            <a href="" class="dropdown-item">Indore</a>
+            <a href="" class="dropdown-item">Lucknow</a>
+
+            </div>
+            
+    </div>
+            <a href="{{ url_for('contact') }}" class="nav-item nav-link font">Contact</a>
+            
+        </div>
+        <a href="{{ url_for('log_sign') }}" class="btn btn-primary rounded-pill py-2 px-4" >Log In</a>
+    </div>
+   
+</nav>
+{% endblock %}

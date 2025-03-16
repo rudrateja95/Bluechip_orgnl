@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blue Chip</title>
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+        <meta http-equiv="Cache-control" content="no-cache">
+        <!-- Favicon -->
+        <link rel="icon" href="{{ url_for('static', filename='img/logo.jpg') }}">
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+    
+        <!-- Icon Font Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+        <!-- Libraries Stylesheet -->
+        <link href="{{ url_for('static', filename='css/animate.min.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='css/owl.carousel.min.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='css/tempusdominus-bootstrap-4.min.css') }}" rel="stylesheet" >
+       
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='css/style.css') }}"  rel="stylesheet">
+    </head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+
+
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+        {% block navbar %}
+        {% include "navbar.html" %}
+        {% endblock %}
+        <div class="container-fluid bg-primary py-5 mb-5 hero-header01">
+            <div class="container py-5">
+                <div class="row justify-content-center py-5">
+                    <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+                    <h2 class="display-3 text-white animated slideInDown">Best DUALINGO Coaching in Chennai-bengaluru-kerala-coimbatore-mumbai</h2>
+                        <nav aria-label="breadcrumb">
+                         
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+         <!-- Booking Start -->
+         <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s" >
+            <div class="container" >
+                <div class="text-center">
+                            
+                    <h1 class="mb-5" style="color: black;">Acadamic Training</h1>
+                </div>
+                <div class="booking p-5" style="border-radius: 30px;">
+                    
+                    <div class="row g-5 align-items-center">
+                     
+                        <p > <li style="color: white;">Duolingo is a popular language-learning platform that offers a fun and interactive way for users to learn English and many other languages. Launched in 2012, Duolingo utilizes gamification to engage learners, turning the process of language acquisition into an enjoyable game. Users can complete lessons that include vocabulary, grammar, listening, and speaking exercises, earning points and rewards as they progress through levels.</li> <br>
+                            <li style="color: white;">The platform caters to learners of all ages and backgrounds, making it accessible and user-friendly. Its adaptive learning technology personalizes lessons based on the user’s performance, ensuring that each learner can work at their own pace. Duolingo also provides various tools, such as podcasts, stories, and discussion forums, allowing users to immerse themselves in the language beyond traditional exercises.</li><br>
+                        
+                        <li style="color: white;">One of Duolingo’s standout features is its commitment to making language learning free and accessible to everyone. The platform offers a freemium model, allowing users to learn without any cost while providing an optional subscription for an ad-free experience and additional features. With its engaging approach, Duolingo has successfully encouraged millions of users worldwide to embark on their language-learning journeys.</li></p>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Booking Start -->
+
+
+           <!-- Package Start -->
+           <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="section-title bg-white text-center text-primary1 px-3">Timeline</h6>
+                    <h1 class="mb-5"></h1>
+                </div>
+                <div class="timeline">
+                    <ul>
+                    <li>
+                        <div class="content">
+                            <h3>Vocabulary</h3>
+                    
+                        </div>
+                        <div class="time">
+                        <h4 style="color: White;">Days</h4>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="content">
+                        <h3>Grammar</h3>
+
+                    
+                        </div>
+                        <div class="time">
+                        <h4 style="color: white;">Days</h>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="content">
+                        <h3>Common Emergencies</h3>
+
+                        </div>
+                        <div class="time">
+                        <h4 style="color: white;">Days</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content">
+                        <h3>Listening Skills</h3>
+
+                        </div>
+                        <div class="time">
+                        <h4 style="color: white;">Days</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content">
+                        <h3>Speaking Practice</h3>
+
+                        </div>
+                        <div class="time">
+                        <h4 style="color: white;">Days</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content">
+                        <h3>Reading Comprehension</h3>
+
+                        </div>
+                        <div class="time">
+                        <h4 style="color: white;">Days</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content">
+                        <h3>Writing Skills</h3>
+ 
+                        </div>
+                        <div class="time">
+                        <h4 style="color: white;">Days</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content">
+                        <h3>Cultural Context</h3>
+
+                        </div>
+                        <div class="time">
+                        <h4 style="color: white;">Days</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content">
+                        <h3>Progressive Levels</h3>
+
+                        </div>
+                        <div class="time">
+                        <h4 style="color: white;">Days</h4>
+                        </div>
+                    </li>
+
+                    
+                
+                    <div style="clear:both;"></div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Package End -->
+
+        <!-- Table start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s" >
+        <div class="container" >
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Exam pattern</h6>
+                <h1 class="mb-5">The following table shows the EMRIC exam pattern</h1>
+            </div>
+            
+                <div class="row g-5 align-items-center">
+                    <div class="table-responsive">
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th scope="col">Section</th>
+                              <th scope="col">Description</th>
+                              <th scope="col">Time Allotted</th>
+                              <th scope="col">Score Range</th>
+                              
+                           
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="noBorder">Literacy</td>
+                              <td class="noBorder">Reading and writing tasks, including reading comprehension and writing a response to a prompt.</td>
+                              <td class="noBorder">20 minutes</td>
+                              <td class="noBorder">10-160</td>
+                           
+                           
+                            </tr>
+                            <tr>
+                                <td class="noBorder">Listening</td>
+                                <td class="noBorder">Listening tasks, including audio clips and answering questions.</td>
+                                <td class="noBorder">20 minutes</td>
+                                <td class="noBorder">10-160</td>
+                        
+                            
+                            </tr>
+                            <tr>
+                                <td class="noBorder">Speaking</td>
+                                <td class="noBorder">Speaking tasks, including describing images and answering questions.</td>
+                                <td class="noBorder">20 minutes</td>
+                                <td class="noBorder">10-160</td>
+                                
+                             
+                            </tr>
+                            <tr>
+                                <td class="noBorder">Total</td>
+                                <td class="noBorder">Combined score from all sections.</td>
+                                <td class="noBorder">Approximately 60 minutes total</td>
+                                <td class="noBorder">10-160</td>
+                              
+                               
+                            </tr>
+                         
+                         
+                         
+                          </tbody>
+                        </table>
+                      </div>
+                </div>
+            
+        </div>
+    </div>
+     <!-- Table End -->
+
+
+
+
+
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Networks</h6>
+                <h1 class="mb-5"> Our Global Networks</h1>
+            </div>
+            <div class="Slide-container h-100">
+                <div class="row align-items-center h-100">
+                  <div class="container rounded">
+                   
+                    <div class="slider">
+                      <div class="logos">
+                        <i class=""><img src="img/n-1.png" alt="img" style="width: 10%;height: 10%;"></i>
+                        <i class=""><img src="img/n-2.png" alt="img" style="width: 10%;height: 10%;"></i>
+                        <i class=""><img src="img/n-3.png" alt="img" style="width: 10%;height: 10%;"></i>
+                        <i class=""><img src="img/n-4.png" alt="img" style="width: 10%;height: 10%;"></i>
+                        <i class=""><img src="img/n-5.png" alt="img" style="width: 10%;height: 10%;"></i>
+                        <i class=""><img src="img/n-6.png" alt="img" style="width: 10%;height: 10%;"></i>
+                        <i class=""><img src="img/n-7.png" alt="img" style="width: 10%;height: 10%;"></i>
+                        <i class=""><img src="img/n-8.png" alt="img" style="width: 10%;height: 10%;"></i>
+                        <i class=""><img src="img/n-9.png" alt="img" style="width: 10%;height: 10%;"></i>
+                      </div>
+                      <div class="logos">
+                        <i class=""><img src="img/n-1.png" alt="img" style="width: 10%;height: 10%;"></i>
+                        <i class=""><img src="img/n-2.png" alt="img" style="width: 10%;height: 10%;"></i>
+                        <i class=""><img src="img/n-3.png" alt="img" style="width: 10%;height: 10%;"></i>
+                        <i class=""><img src="img/n-4.png" alt="img" style="width: 10%;height: 10%;"></i>
+                        <i class=""><img src="img/n-5.png" alt="img" style="width: 10%;height: 10%;"></i>
+                        <i class=""><img src="img/n-6.png" alt="img" style="width: 10%;height: 10%;"></i>
+                        <i class=""><img src="img/n-7.png" alt="img" style="width: 10%;height: 10%;"></i>
+                        <i class=""><img src="img/n-8.png" alt="img" style="width: 10%;height: 10%;"></i>
+                        <i class=""><img src="img/n-9.png" alt="img" style="width: 10%;height: 10%;"></i>
+                      </div>
+                     
+                    </div>
+                  </div>
+                </div>
+              
+              </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+
+
+   <!-- Footer Start -->
+   {% block footer %}
+   {% include "footer.html" %}
+   {% endblock %}
+   <!-- Footer End -->
+
+
+   <!-- Back to Top -->
+   <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+   <!-- JavaScript Libraries -->
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/easing.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/waypoints.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/moment.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/moment-timezone.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/tempusdominus-bootstrap-4.min.js') }}"></script>
+
+   <!-- Template Javascript -->
+   <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>

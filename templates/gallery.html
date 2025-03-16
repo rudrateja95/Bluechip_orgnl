@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Chip</title>
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <!-- Favicon -->
+    <link rel="icon" href="{{ url_for('static', filename='img/logo.jpg') }}">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Libraries Stylesheet -->
+    <link href="{{ url_for('static', filename='css/animate.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/owl.carousel.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/tempusdominus-bootstrap-4.min.css') }}" rel="stylesheet" >
+   
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/style.css') }}"  rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+
+
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+        {% block navbar %}
+           {% include "navbar.html" %}
+        {% endblock %}
+
+        <div class="container-fluid bg-primary py-5 mb-5 hero-header2">
+            <div class="container py-5 ">
+                <div class="row justify-content-center py-5 ">
+                    <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+                        <h1 class="display-3 text-white animated slideInDown" style="  text-shadow: 1px 1px 2px #000000;">Gallery and Events</h1>
+                        <nav aria-label="breadcrumb">
+                           
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+
+
+    <!-- Contact Start malesia-->
+    <div class="container-xxl py-5">
+        <div class="container">
+          
+        <div class="gallery">
+
+
+            
+
+        <div class="gallery-item" onclick="openModal(0)">
+            <img src="{{ url_for('static', filename='img/g-1.jpg') }}" alt="Venice Italy">
+        </div>
+
+        <div class="gallery-item" onclick="openModal(1)">
+            <img src="{{ url_for('static', filename='img/g-2.jpg') }}" alt="Venice Italy">
+        </div>
+        <div class="gallery-item" onclick="openModal(2)">
+            <img src="{{ url_for('static', filename='img/g-3.jpg') }}" alt="Venice Italy">
+        </div>
+        <div class="gallery-item" onclick="openModal(3)">
+            <img src="{{ url_for('static', filename='img/g-4.jpg') }}" alt="Venice Italy">
+        </div>
+        <div class="gallery-item" onclick="openModal(4)">
+            <img src="{{ url_for('static', filename='img/g-5.jpg') }}" alt="Venice Italy">
+        </div>
+        <div class="gallery-item" onclick="openModal(5)">
+            <img src="{{ url_for('static', filename='img/g-6.jpg') }}" alt="Venice Italy">
+        </div>
+
+        <div class="gallery-item" onclick="openModal(6)">
+            <img src="{{ url_for('static', filename='img/g-7.jpg') }}" alt="Venice Italy">
+        </div>
+        <div class="gallery-item" onclick="openModal(7)">
+            <img src="{{ url_for('static', filename='img/g-8.jpg') }}" alt="Venice Italy">
+        </div>
+        <div class="gallery-item" onclick="openModal(8)">
+            <img src="{{ url_for('static', filename='img/g-9.jpg') }}" alt="Venice Italy">
+        </div>
+        <div class="gallery-item" onclick="openModal(9)">
+            <img src="{{ url_for('static', filename='img/g-10.jpg') }}" alt="Venice Italy">
+        </div>
+
+
+
+        <div class="gallery-item" onclick="openModal(10)">
+            <img src="{{ url_for('static', filename='img/g-11.jpg') }}" alt="Venice Italy">
+        </div>
+        <div class="gallery-item" onclick="openModal(11)">
+            <img src="{{ url_for('static', filename='img/g-12.jpg') }}" alt="Venice Italy">
+        </div>
+        <div class="gallery-item" onclick="openModal(12)">
+            <img src="{{ url_for('static', filename='img/g-13.jpg') }}" alt="Venice Italy">
+        </div>
+        <div class="gallery-item" onclick="openModal(13)">
+            <img src="{{ url_for('static', filename='img/g-14.jpg') }}" alt="Venice Italy">
+        </div>
+        <div class="gallery-item" onclick="openModal(14)">
+            <img src="{{ url_for('static', filename='img/g-15.jpg') }}" alt="Venice Italy">
+        </div>
+        <div class="gallery-item" onclick="openModal(15)">
+            <img src="{{ url_for('static', filename='img/g-16.jpeg') }}" alt="Venice Italy">
+        </div>
+        <div class="gallery-item" onclick="openModal(16)">
+            <img src="{{ url_for('static', filename='img/g-17.jpeg') }}" alt="Venice Italy">
+        </div>
+        <div class="gallery-item" onclick="openModal(17)">
+            <img src="{{ url_for('static', filename='img/g-18.jpeg') }}" alt="Venice Italy">
+        </div>
+
+    </div>
+
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <div class="modal-left">
+                <img id="modal-img" src="" alt="Modal Image">
+            </div>
+            <div class="modal-right">
+                <p id="modal-text"></p>
+                <button class="nav-btn" onclick="prevImage()">&#9664;</button>
+                <button class="nav-btn" onclick="nextImage()">&#9654;</button>
+            </div>
+        </div>
+    </div>
+            
+        </div>
+    </div>
+    <!-- Contact End malesia-->
+
+        <!-- Event videos Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3"> videos</h6>
+                <h1 class="mb-5">Event videos</h1>
+            </div>
+            <div class="row g-4">
+
+                <center><div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/RLEghZpaYrk?si=y6P1EVLz3SykMJDD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+                </div></center>
+
+
+               
+               
+               
+            </div>
+        </div>
+    </div>
+    <!-- Event videos End -->
+
+
+    <!-- Footer Start -->
+    {% block footer %}
+           {% include "footer.html" %}
+    {% endblock %}
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/easing.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/waypoints.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/moment.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/moment-timezone.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/tempusdominus-bootstrap-4.min.js') }}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+    <script>
+        const images = [
+    {
+        src:"{{ url_for('static', filename='img/g-1.jpg') }}",
+                                                                                                                                                                                                                      
+    },
+    {
+        src:"{{ url_for('static', filename='img/g-2.jpg') }}",
+       
+    },
+    {
+        src:"{{ url_for('static', filename='img/g-3.jpg') }}",
+       
+    },
+    {
+        src:"{{ url_for('static', filename='img/g-4.jpg') }}",
+        
+    },
+    {
+        src:"{{ url_for('static', filename='img/g-5.jpg') }}",
+
+    },
+    {
+        src:"{{ url_for('static', filename='img/g-6.jpg') }}",
+        
+    },
+    {
+        src:"{{ url_for('static', filename='img/g-7.jpg') }}",
+      
+    },
+    {
+        src:"{{ url_for('static', filename='img/g-8.jpg') }}",
+       
+    },
+    {
+        src:"{{ url_for('static', filename='img/g-9.jpg') }}",
+        
+    },
+    {
+        src:"{{ url_for('static', filename='img/g-10.jpg') }}",
+        
+    },
+    {
+        src:"{{ url_for('static', filename='img/g-11.jpg') }}",
+       
+    },
+    {
+        src:"{{ url_for('static', filename='img/g-12.jpg') }}",
+      
+    },
+    {
+        src:"{{ url_for('static', filename='img/g-13.jpg') }}",
+       
+    },
+    {
+        src:"{{ url_for('static', filename='img/g-14.jpg') }}",
+       
+    },
+    {
+        src:"{{ url_for('static', filename='img/g-15.jpg') }}",
+     
+    },
+    {
+        src:"{{ url_for('static', filename='img/g-16.jpeg') }}",
+     
+    },
+    {
+        src:"{{ url_for('static', filename='img/g-17.jpeg') }}",
+     
+    },
+    {
+        src:"{{ url_for('static', filename='img/g-1.jpeg') }}",
+     
+    },
+    // Voeg hier meer afbeeldingen en beschrijvingen toe als nodig
+];
+let currentIndex = 0;
+
+function openModal(index) {
+    currentIndex = index;
+    document.getElementById('modal-img').src = images[index].src;
+    document.getElementById('modal-text').innerText = images[index].text;
+    document.getElementById('modal').style.display = 'block';
+}
+
+function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+}
+
+function prevImage() {
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+    updateModal();
+}
+
+function nextImage() {
+    currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+    updateModal();
+}
+
+function updateModal() {
+    document.getElementById('modal-img').src = images[currentIndex].src;
+    document.getElementById('modal-text').innerText = images[currentIndex].text;
+}
+    </script>
+</body>
+
+</html>

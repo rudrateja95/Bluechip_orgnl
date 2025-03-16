@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Chip</title>
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <!-- Favicon -->
+    <link rel="icon" href="{{ url_for('static', filename='img/logo.jpg') }}">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Libraries Stylesheet -->
+    <link href="{{ url_for('static', filename='css/animate.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/owl.carousel.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/tempusdominus-bootstrap-4.min.css') }}" rel="stylesheet" >
+   
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/style.css') }}"  rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+   
+
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+       
+        {% block navbar %}
+        {% include "navbar.html" %}
+        {% endblock %}
+
+        <div class="container-fluid bg-primary py-5 mb-5 hero-header8">
+            <div class="container py-5">
+                <div class="row justify-content-center py-5">
+                    <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+                        <h1 class="display-3 text-white animated slideInDown">Medical Institute of Pharmaceutical Education and Research</h1>
+                        <nav aria-label="breadcrumb">
+                         
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+
+
+
+    <!-- About college  -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute w-100 h-100" src="{{ url_for('static', filename='img/miper.webp') }}" alt="" style="object-fit: cover;border-radius: 10px;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h6 class="section-title bg-white text-start text-primary pe-3">About</h6>
+                    <h4 class="mb-4"> <span class="text-primary">Medical Institute of Pharmaceutical Education and Research</span></h4>
+                   <li>The main goal of the direction of medical care is to train highly qualified doctors who meet the requirements of modern medicine based on the state education standards of the Republic of Uzbekistan.</li>
+                   <li>The knowledge provided by leading teachers with strong scientific potential and rich experience working in our institute gives our students the opportunity to compete with students of the most prestigious higher education institutions in the world in terms of knowledge, skills and abilities. Our students study in modernly equipped classrooms and develop practical skills in laboratories, as well as practice in leading private clinics, state hospitals and medical centers, all above mentioned create the ground for them to be the best doctors.</li>
+                   <li>It is our constant endeavor to provide the best possible learning environment for our students, which is why we comply with the NMC GUIDELINES CRITERIA FOR STUDENTS FROM INDIA TO STUDY MEDICINE ABROAD to ensure that our Indian students can complete the program without any complications or hassles.</li>
+                    
+                  
+                 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About college -->
+
+
+<!-- Table start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s" >
+        <div class="container" >
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">College Fees</h6>
+                <h1 class="mb-5"> 2024-2025</h1>
+            </div>
+            
+                <div class="row g-5 align-items-center">
+                    <div class="table-responsive">
+                        <img src="static/img/ksmu.jpeg" alt="Paris" width="400" height="300">
+                      </div>
+                </div>
+            
+        </div>
+    </div>
+     <!-- Table End -->
+
+
+     <!-- Booking Start -->
+     <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="bookin p-0">
+                <div class="row g-5 align-items-center">
+                    <center><h3 class="section-title bg-white text-center text-primary px-3">Additional charges</h3></center>
+                    <div class="col-md-6 text-black border-right">
+                        <h3>1<sup>st</sup> year additional charges</h3>
+                        <li>Policy Registration : 250$ (govt fees)</li>
+                        <li>Medical Check-up and health card : 100$</li>
+                        <li>Food Charges : 1200$</li>
+                    </div>
+                    <div class="col-md-6 text-black">
+                        <h3>from 2<sup>nd</sup> year on words</h3>
+                        <li>visa extension approx 250$/year (govt fees)</li>
+                       <li>Police regestration Approx-250$/year (govt fees)</li>
+                       <li>Medical Check-up and health card : 100$</li>
+                    </div>
+                   <center> Note : for registration student have to $250 for registration <br>
+                    (2000$ incentive to associate from 1st year tution fee)<br>
+                    (200$ incentive per year to associate )</center>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Booking Start -->
+     <!-- Booking Start -->
+     <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="bookin p-0">
+                <div class="row g-5 align-items-center">
+                    <center><h3 class="section-title bg-white text-center text-primary px-3">Processing Fees</h3></center>
+                    <div class="col-md-12 text-black border-right">
+                        <h3>Processing Fees to be paid in India - 2 lac Rs.</h3>
+                        <li>Visa for One year (Multiple-Entry),Document</li>
+                        <li>Apostille from MEA, SIM card on Arrival , Indian Embassy Registration Immigration Clearnce,Pre & Post arrival support</li>
+                        <li>1 <sup>st</sup>Year Medical Books , NMC & UMLE Study Material</li>
+                    </div>
+                   <h3>Note : Air - Ticket Charges Will be Extra (Online charges will be Apllicable)</h3>
+                   <a href="{{ url_for('contact') }}" class="btn btn-primary rounded-pill py-2 px-4">BOOK A FREE DEMO <i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Booking Start -->
+
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Networks</h6>
+                <h1 class="mb-5"> Our Global Networks</h1>
+            </div>
+            <div class="Slide-container h-100">
+                <div class="row align-items-center h-100">
+                  <div class="container rounded">
+                   
+                    <div class="slider">
+                        <div class="logos">
+                            <i class=""><img src="{{ url_for('static', filename='img/n-1.png') }}" alt="img" style="width: 10%;height: 10%;"></i>
+                            <i class=""><img src="{{ url_for('static', filename='img/n-2.png') }}" alt="img" style="width: 10%;height: 10%;"></i>
+                            <i class=""><img src="{{ url_for('static', filename='img/n-3.png') }}" alt="img" style="width: 10%;height: 10%;"></i>
+                            <i class=""><img src="{{ url_for('static', filename='img/n-4.png') }}" alt="img" style="width: 10%;height: 10%;"></i>
+                            <i class=""><img src="{{ url_for('static', filename='img/n-5.png') }}" alt="img" style="width: 10%;height: 10%;"></i>
+                            <i class=""><img src="{{ url_for('static', filename='img/n-6.png') }}" alt="img" style="width: 10%;height: 10%;"></i>
+                            <i class=""><img src="{{ url_for('static', filename='img/n-7.png') }}" alt="img" style="width: 10%;height: 10%;"></i>
+                            <i class=""><img src="{{ url_for('static', filename='img/n-8.png') }}" alt="img" style="width: 10%;height: 10%;"></i>
+                            <i class=""><img src="{{ url_for('static', filename='img/n-9.png') }}" alt="img" style="width: 10%;height: 10%;"></i>
+    
+                        </div>
+                        <div class="logos">
+                            <i class=""><img src="{{ url_for('static', filename='img/n-1.png') }}" alt="img" style="width: 10%;height: 10%;"></i>
+                            <i class=""><img src="{{ url_for('static', filename='img/n-2.png') }}" alt="img" style="width: 10%;height: 10%;"></i>
+                            <i class=""><img src="{{ url_for('static', filename='img/n-3.png') }}" alt="img" style="width: 10%;height: 10%;"></i>
+                            <i class=""><img src="{{ url_for('static', filename='img/n-4.png') }}" alt="img" style="width: 10%;height: 10%;"></i>
+                            <i class=""><img src="{{ url_for('static', filename='img/n-5.png') }}" alt="img" style="width: 10%;height: 10%;"></i>
+                            <i class=""><img src="{{ url_for('static', filename='img/n-6.png') }}" alt="img" style="width: 10%;height: 10%;"></i>
+                            <i class=""><img src="{{ url_for('static', filename='img/n-7.png') }}" alt="img" style="width: 10%;height: 10%;"></i>
+                            <i class=""><img src="{{ url_for('static', filename='img/n-8.png') }}" alt="img" style="width: 10%;height: 10%;"></i>
+                            <i class=""><img src="{{ url_for('static', filename='img/n-9.png') }}" alt="img" style="width: 10%;height: 10%;"></i>
+                          </div>
+                     
+                    </div>
+                  </div>
+                 
+                </div>
+              
+              </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+   
+ 
+        
+    <!-- Footer Start -->
+    {% block footer %}
+    {% include "footer.html" %}
+    {% endblock %}
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/easing.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/waypoints.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/moment.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/moment-timezone.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/tempusdominus-bootstrap-4.min.js') }}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>

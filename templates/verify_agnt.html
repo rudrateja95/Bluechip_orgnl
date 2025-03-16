@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bluechip</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='log_css/style.css') }}">
+    </head>
+    <body>
+        <div class="container clearfix">
+                <div class="form login">
+                    {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% if messages %}
+                      {% for category, message in messages %}
+                        <div class="alert alert-{{ category }}" style="color:green">
+                          {{ message }}
+                        </div>
+                      {% endfor %}
+                    {% endif %}
+                  {% endwith %}
+                <a class="logo" href="">
+                    <img src="{{ url_for('static', filename='img/logo.jpg') }}" alt="Logo" />
+                </a>
+                <form action="{{ url_for('verify_agnt_request') }}" method="POST">
+                    <p>
+                        <label>Email address<span>*</span></label>
+                        <input type="email" name="email" required>
+                    </p>
+                    <p>
+                        <label>Phone No:<span>*</span></label>
+                        <input type="text" name="phone" required>
+                    </p>
+                    <p>
+                        <input type="submit" value="Verify">
+                    </p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

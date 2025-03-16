@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Bluechip</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="{{ url_for('static', filename='img/logo.jpg') }}" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{{ url_for('static', filename='lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css') }}" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{{ url_for('static', filename='adm_css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="{{ url_for('static', filename='adm_css/style.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container-fluid position-relative bg-white d-flex p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Sidebar Start -->
+        <div class="sidebar pe-4 pb-3">
+            <nav class="navbar bg-light navbar-light">
+                <a href="index.html" class="navbar-brand mx-4 mb-3">
+                    <h3 class="text-primary">BC-Admin</h3>
+                </a>
+                <div class="d-flex align-items-center ms-4 mb-4">
+                    <div class="position-relative">
+                        <img class="rounded-circle" src="{{ url_for('static', filename='img/md_admin.png') }}" alt="" style="width: 40px; height: 40px;">
+                        <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
+                    </div>
+                    <div class="ms-3">
+                        <h6 class="mb-0">M.Hariss</h6>
+                        <span>Admin</span>
+                    </div>
+                </div>
+                <div class="navbar-nav w-100">
+                    <a href="{{ url_for('dashboard') }}" class="nav-item nav-link "><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>Websites</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="{{ url_for('alrt_gllr') }}" class="dropdown-item">Alerts and Gallery</a>
+                        </div>
+                    </div>
+                    <a href="widget.html" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Slots</a>
+                    <a href="{{ url_for('st_documents') }}" class="nav-item nav-link active"><i class="fa fa-keyboard me-2"></i>Student Details</a>
+                    <a href="{{ url_for('add_university') }}" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Add University</a>
+                    <a href="{{ url_for('registration') }}" class="nav-item nav-link"><i class="fa fa-graduation-cap me-2"></i>Student Register</a>
+                    <a href="{{ url_for('agent_register') }}" class="nav-item nav-link"><i class="fa fa-users me-2"></i>Agent Register</a>
+                   
+                   
+                </div>
+            </nav>
+        </div>
+        <!-- Sidebar End -->
+
+
+        <!-- Content Start -->
+        <div class="content">
+            <!-- Navbar Start -->
+            <nav class="navbar navbar-expand bg-light navbar-light sticky-top px-4 py-0">
+                <a href="index.html" class="navbar-brand d-flex d-lg-none me-4">
+                    <h2 class="text-primary mb-0"><i class="fa fa-hashtag"></i></h2>
+                </a>
+                <a href="#" class="sidebar-toggler flex-shrink-0">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <h6 class="d-none d-md-flex ms-4">
+                    Bluechip Admin Board
+                </h6>
+                <div class="navbar-nav align-items-center ms-auto">
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="fa fa-envelope me-lg-2"></i>
+                            <span class="d-none d-lg-inline-flex">Message</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
+                            <a href="#" class="dropdown-item">
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded-circle" src="{{ url_for('static', filename='img/user.jpg') }}" alt="" style="width: 40px; height: 40px;">
+                                    <div class="ms-2">
+                                        <h6 class="fw-normal mb-0">Jhon send you a message</h6>
+                                        <small>15 minutes ago</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                                    <div class="ms-2">
+                                        <h6 class="fw-normal mb-0">Jhon send you a message</h6>
+                                        <small>15 minutes ago</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                                    <div class="ms-2">
+                                        <h6 class="fw-normal mb-0">Jhon send you a message</h6>
+                                        <small>15 minutes ago</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item text-center">See all message</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="fa fa-bell me-lg-2"></i>
+                            <span class="d-none d-lg-inline-flex">Notification</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
+                            <a href="#" class="dropdown-item">
+                                <h6 class="fw-normal mb-0">Profile updated</h6>
+                                <small>15 minutes ago</small>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <h6 class="fw-normal mb-0">New user added</h6>
+                                <small>15 minutes ago</small>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <h6 class="fw-normal mb-0">Password changed</h6>
+                                <small>15 minutes ago</small>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item text-center">See all notifications</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <img class="rounded-circle me-lg-2" src="{{ url_for('static', filename='img/user.jpg') }}" alt="" style="width: 40px; height: 40px;">
+                            <span class="d-none d-lg-inline-flex">M.Hariss</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
+                           
+                            <a href="{{ url_for('logout') }}" class="dropdown-item">Log Out</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- Navbar End -->
+
+
+                       <!-- Recent Sales Start -->
+                        <div class="container-fluid pt-4 px-4">
+                            <div class="bg-light text-center rounded p-4">
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <h5 class="mb-0 align-center">Student Documents</h5>
+                                    {% with messages = get_flashed_messages(with_categories=true) %}
+                                    {% if messages %}
+                                      {% for category, message in messages %}
+                                        <div class="alert alert-{{ category }}" style="color:green">
+                                          {{ message }}
+                                        </div>
+                                      {% endfor %}
+                                    {% endif %}
+                                  {% endwith %}
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table text-start align-middle table-bordered table-hover mb-0">
+                                        <thead>
+                                            <tr class="text-dark" >
+                                                
+                                                <th scope="col" >Student(Reg) Name</th>
+                                                <th scope="col" >Country</th>
+                                                <th scope="col" >University</th>
+                                                <th scope="col">Resume</th>
+                                                <th scope="col">Passport_copy</th>
+                                                <th scope="col">10<sup>th</sup> marksheet</th>
+                                                <th scope="col">12<sup>th</sup> marksheet</th>
+                                                <th scope="col">Degree/MBBS Transcript</th>
+                                                <th scope="col">Diploma/PGDM</th>
+                                                <th scope="col">PDC/Course Completion Certificate</th>
+                                                <th scope="col">Under Graduate Certificate</th>
+                                                <th scope="col">Language Proficiency</th>
+                                                <th scope="col">Statement Of Purpose</th>
+                                                <th scope="col">Letter Of Recommendation</th>
+                                                <th scope="col">Experience Letter</th>
+                                                <th scope="col">Enter The Status</th>
+                                                <th scope="col">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {% for student in students %}
+                                            <tr>
+                                                <td style="color:darkblue;">{{ student.name }}</td>
+                                                <td>{{ student.country_st }}</td>
+                                                <td>{{ student.university_st }}</td>
+                                                <td>{% if student.resume %}<a href="{{ url_for('view_document', document_type='resume', student_id=student.id) }}">View</a>{% else %}N/A{% endif %}</td>
+                                                <td>{% if student.passport_copy %}<a href="{{ url_for('view_document', document_type='passport', student_id=student.id) }}">View</a>{% else %}N/A{% endif %}</td>
+                                                <td>{% if student.marksheet_10 %}<a href="{{ url_for('view_document', document_type='marksheet_10', student_id=student.id) }}">View</a>{% else %}N/A{% endif %}</td>
+                                                <td>{% if student.marksheet_12 %}<a href="{{ url_for('view_document', document_type='marksheet_12', student_id=student.id) }}">View</a>{% else %}N/A{% endif %}</td>
+                                                <td>{% if student.transcript %}<a href="{{ url_for('view_document', document_type='transcript', student_id=student.id) }}">View</a>{% else %}N/A{% endif %}</td>
+                                                <td>{% if student.pgdm %}<a href="{{ url_for('view_document', document_type='pgdm', student_id=student.id) }}">View</a>{% else %}N/A{% endif %}</td>
+                                                <td>{% if student.pdc %}<a href="{{ url_for('view_document', document_type='pdc', student_id=student.id) }}">View</a>{% else %}N/A{% endif %}</td>
+                                                <td>{% if student.ugc %}<a href="{{ url_for('view_document', document_type='ugc', student_id=student.id) }}">View</a>{% else %}N/A{% endif %}</td>
+                                                <td>{% if student.lp %}<a href="{{ url_for('view_document', document_type='lp', student_id=student.id) }}">View</a>{% else %}N/A{% endif %}</td>
+                                                <td>{% if student.sop %}<a href="{{ url_for('view_document', document_type='sop', student_id=student.id) }}">View </a>{% else %}N/A{% endif %}</td>
+                                                <td>{% if student.lor %}<a href="{{ url_for('view_document', document_type='lor', student_id=student.id) }}">View </a>{% else %}N/A{% endif %}</td>
+                                                <td>{% if student.el %}<a href="{{ url_for('view_document', document_type='el', student_id=student.id) }}">View</a>{% else %}N/A{% endif %}</td>
+                                                <td>
+                                                    <form method="POST" action="{{ url_for('update_status', student_id=student.id) }}">
+                                                        <input type="text" name="status" placeholder="Enter status"><br>
+                                                        <p><span style="color:green;">{{ student.status if student.status else 'No status Update' }} </span> </p>
+                                                        <td><button type="submit" class="btn btn-sm btn-success">Update</button><td>
+                                                    </form>
+                                                </td>
+                                            </tr>
+                                            {% else %}
+                                            <tr>
+                                                <td colspan="5">No students found.</td>
+                                            </tr>
+                                            {% endfor %}
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <br>
+                                <ul class="pagination">
+                                    {% if students.has_prev %}
+                                        <li class="page-item"><a class="page-link" href="{{ url_for('st_documents', page=students.prev_num) }}">Previous</a></li>
+                                    {% endif %}
+                                    <li class="page-item disabled"><a class="page-link">{{ students.page }} of {{ students.pages }}</a></li>
+                                    {% if students.has_next %}
+                                        <li class="page-item"><a class="page-link" href="{{ url_for('st_documents', page=students.next_num) }}">Next</a></li>
+                                    {% endif %}
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Recent Sales End -->
+
+                       <!-- Recent Sales Start -->
+                       <div class="container-fluid pt-4 px-4">
+                        <div class="bg-light text-center rounded p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <h5 class="mb-0 align-center">Agent Student List</h5>
+                                
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table text-start align-middle table-bordered table-hover mb-0">
+                                    <thead>
+                                        <tr class="text-dark" >
+                                            
+                                            <th scope="col" >Student(Reg) Name</th>
+                                            <th scope="col" >Country</th>
+                                            <th scope="col" >University</th>
+                                            <th scope="col">Resume</th>
+                                            <th scope="col">Passport_copy</th>
+                                            <th scope="col">10<sup>th</sup> marksheet</th>
+                                            <th scope="col">12<sup>th</sup> marksheet</th>
+                                            <th scope="col">Degree/MBBS Transcript</th>
+                                            <th scope="col">Diploma/PGDM</th>
+                                            <th scope="col">PDC/Course Completion Certificate</th>
+                                            <th scope="col">Under Graduate Certificate</th>
+                                            <th scope="col">Language Proficiency</th>
+                                            <th scope="col">Statement Of Purpose</th>
+                                            <th scope="col">Letter Of Recommendation</th>
+                                            <th scope="col">Experience Letter</th>
+                                            <th scope="col">Enter The Status</th>
+                                            <th scope="col">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for doc in agent_docs %}
+                                        <tr>
+                                            <td style="color:darkblue;">{{ doc.name }}</td>
+                                            <td style="color:darkblue;">{{ doc.country_agt }}</td>
+                                            <td style="color:darkblue;">{{ doc.university_agt }}</td>
+                                            <td>{% if doc.resume %}<a href="{{ url_for('view_doc', doc_id=doc.id, doc_type='resume') }}" target="_blank">View</a>{% else %}N/A{% endif %}</td>
+                                            <td>{% if doc.passport_copy %}<a href="{{ url_for('view_doc', doc_id=doc.id, doc_type='passport_copy') }}" target="_blank">View</a>{% else %}N/A{% endif %}</td>
+                                            <td>{% if doc.marksheet_10 %}<a href="{{ url_for('view_doc', doc_id=doc.id, doc_type='marksheet_10') }}" target="_blank">View</a>{% else %}N/A{% endif %}</td>
+                                            <td>{% if doc.marksheet_12 %}<a href="{{ url_for('view_doc', doc_id=doc.id, doc_type='marksheet_12') }}" target="_blank">View</a>{% else %}N/A{% endif %}</td>
+                                            <td>{% if doc.transcript %}<a href="{{ url_for('view_doc', doc_id=doc.id, doc_type='transcript') }}" target="_blank">View</a>{% else %}N/A{% endif %}</td>
+                                            <td>{% if doc.pgdm %}<a href="{{ url_for('view_doc', doc_id=doc.id, doc_type='pgdm') }}" target="_blank">View</a>{% else %}N/A{% endif %}</td>
+                                            <td>{% if doc.pdc %}<a href="{{ url_for('view_doc', doc_id=doc.id, doc_type='pdc') }}" target="_blank">View</a>{% else %}N/A{% endif %}</td>
+                                            <td>{% if doc.ugc %}<a href="{{ url_for('view_doc', doc_id=doc.id, doc_type='ugc') }}" target="_blank">View</a>{% else %}N/A{% endif %}</td>
+                                            <td>{% if doc.lp %}<a href="{{ url_for('view_doc', doc_id=doc.id, doc_type='lp') }}" target="_blank">View</a>{% else %}N/A{% endif %}</td>
+                                            <td>{% if doc.sop %}<a href="{{ url_for('view_doc', doc_id=doc.id, doc_type='sop') }}" target="_blank">View</a>{% else %}N/A{% endif %}</td>
+                                            <td>{% if doc.lor %}<a href="{{ url_for('view_doc', doc_id=doc.id, doc_type='lor') }}" target="_blank">View</a>{% else %}N/A{% endif %}</td>
+                                            <td>{% if doc.el %}<a href="{{ url_for('view_doc', doc_id=doc.id, doc_type='el') }}" target="_blank">View</a>{% else %}N/A{% endif %}</td>
+                                            <td>
+                                                <form action="{{ url_for('update_doc_status', doc_id=doc.id) }}" method="POST">
+                                                    <input type="text" name="status" placeholder="Enter new status">
+                                                    <p>{{ doc.status or "Pending" }}</p>
+                                                    <td><button type="submit">Update</button></td>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                        {% else %}
+                                        <tr>
+                                            <td colspan="5">No students found.</td>
+                                        </tr>
+                                        {% endfor %}
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                            <br>
+                            <ul class="pagination">
+                                {% if agent_docs.has_prev %}
+                                    <li class="page-item"><a class="page-link" href="{{ url_for('st_documents', agent_docs_page=agent_docs.prev_num) }}">Previous</a></li>
+                                {% endif %}
+                                <li class="page-item disabled"><a class="page-link">{{ agent_docs.page }} of {{ agent_docs.pages }}</a></li>
+                                {% if agent_docs.has_next %}
+                                    <li class="page-item"><a class="page-link" href="{{ url_for('st_documents', agent_docs_page=agent_docs.next_num) }}">Next</a></li>
+                                {% endif %}
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Recent Sales End -->
+
+                 
+
+
+            <!-- Footer Start -->
+            <div class="container-fluid pt-4 px-4">
+                <div class="bg-light rounded-top p-4">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 text-center text-sm-start">
+                            &copy; <a href="#">Blue Chip Services International pvt ltd</a>, All Right Reserved. 
+                        </div>
+                        <div class="col-12 col-sm-6 text-center text-sm-end">
+                            <!--/* This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. */-->
+                            Designed By <a href="https://htmlcodex.com">Blue Chip</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End -->
+        </div>
+        <!-- Content End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='lib/chart/chart.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/easing/easing.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/waypoints/waypoints.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/owlcarousel/owl.carousel.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/tempusdominus/js/moment.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/tempusdominus/js/moment-timezone.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js') }}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{{ url_for('static', filename='adm_js/main.js') }}"></script>
+
+    <script>
+        const socket = io();
+
+        const userType = "{{ user_type }}";  // Set dynamically from Flask
+        const messagesContainer = document.getElementById('messages');
+        const messageInput = document.getElementById('message-input');
+        const sendButton = document.getElementById('send-button');
+
+        // Send message
+        sendButton.addEventListener('click', () => {
+            const message = messageInput.value.trim();
+            if (message) {
+                socket.emit('send_message', { user_type: userType, message });
+                messageInput.value = '';
+            }
+        });
+
+        // Receive and display messages
+        socket.on('receive_message', (data) => {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = data.user_type;
+            messageDiv.textContent = `[${data.timestamp}] ${data.user_type}: ${data.message}`;
+            messagesContainer.appendChild(messageDiv);
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        });
+    </script>
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+
+
+</body>
+
+</html>

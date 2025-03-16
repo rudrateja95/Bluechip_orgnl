@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bluechip</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link src="{{ url_for('static', filename='img/logo.jpg') }}" rel="icon">
+        <link rel="stylesheet" href="{{ url_for('static', filename='log_css/style.css') }}">
+    </head>
+    <body>
+        <div class="container clearfix">
+            <div class="form registration">
+                <a class="logo" href="">
+                    <img src="{{ url_for('static', filename='img/logo.jpg') }}"alt="Logo" />
+                </a>
+                <form action="{{ url_for('agt_register') }}" method="post">
+                    <p>
+                        <label>Enter Agent Name<span>*</span></label>
+                        <input type="text" name="name" placeholder="Username" required>
+                    </p>
+                    <p>
+                        <label>Enter Your Phone Number<span>*</span></label>
+                        <input type="text" name="phone" placeholder="Phone" required>
+                    </p>
+                    <p>
+                        <label>Enter Email Id<span>*</span></label>
+                        <input type="email" name="email" placeholder="Email Id" required>
+                    </p>
+                    <p>
+                        <label>Enter Aadhar or Passport<span>*</span></label>
+                        <input type="text" name="adhaar_pasprt" placeholder="Enter Aadhar or Passport" required>
+                    </p>
+                    <p>
+                        <label>Enter your Office Address<span>*</span></label>
+                        <input type="text" name="address" placeholder="Enter Office Address" required>
+                    </p>
+                    <p>
+                        <label>Enter GST Number<span>*</span></label>
+                        <input type="text" name="gst" placeholder="Enter GST Number" >
+                    </p>
+                    <p>
+                        <label>Enter Password<span>*</span></label>
+                        <input type="password" name="password" placeholder="Password" required>
+                    </p>
+                    <p>
+                        <label>Confirm Password<span>*</span></label>
+                        <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+                    </p>
+                    <p>
+                        <a href="{{ url_for('log2') }}">Have an account</a>
+                        <input type="submit" value="Signup" />
+                    </p>
+                </form>                
+            </div>
+        </div>
+
+    </body>
+</html>

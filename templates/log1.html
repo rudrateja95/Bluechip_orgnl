@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bluechip</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='log_css/style.css') }}">
+   
+    </head>
+    <body>
+        <div class="container clearfix">
+            <div class="form login">
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                  {% for category, message in messages %}
+                    <div class="alert alert-{{ category }}" style="color:green">
+                      {{ message }}
+                    </div>
+                  {% endfor %}
+                {% endif %}
+              {% endwith %}
+                <a class="logo" href="">
+                    <img src="{{ url_for('static', filename='img/logo.jpg') }}" alt="Logo" />
+                </a>
+            
+                <form method="POST" action="{{ url_for('log1') }}">
+                    <p>
+                        <label>Your Email address<span>*</span></label>
+                        <input type="text" id="username" name="username" required>
+                    </p>
+                
+                    <p>
+                        <label>Password<span>*</span></label>
+                        <input type="password" id="password" name="password" required>
+                    </p>
+                    {% if error %}
+                    <p style="color: red;">{{ error }}</p>
+                    {% endif %}
+                
+                    <p>
+                        <label>
+                            <a href="{{ url_for('reset_request') }}">Forgot password?</a>
+                        </label>
+                        <input type="submit" value="Login">
+                    </p>
+                </form>
+                
+            </div>
+            
+        </div>
+
+    </body>
+</html>

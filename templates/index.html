@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Chip</title>
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <!-- Favicon -->
+    <link rel="icon" href="{{ url_for('static', filename='img/logo.jpg') }}">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Libraries Stylesheet -->
+    <link href="{{ url_for('static', filename='css/animate.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/owl.carousel.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/tempusdominus-bootstrap-4.min.css') }}" rel="stylesheet" >
+   
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/style.css') }}"  rel="stylesheet">
+</head>
+
+
+
+
+<body>
+
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popup" style="border-radius: 30px;">
+        <h1 class="text-black mb-4">Request an appointment</h1>
+        <form action="{{ url_for('contact') }}" method="POST" enctype="multipart/form-data" onsubmit="return validateForm()">
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <div class="form-floating">
+                        <input type="text" class="form-control bg-transparent" id="name" name="name" placeholder="Your Name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-floating">
+                        <input type="email" class="form-control bg-transparent" id="email" name="email" placeholder="Your Email" required>
+                        <label for="email">Your Email</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-floating" id="date3" data-target-input="nearest">
+                        <input type="text" class="form-control bg-transparent datetimepicker-input" style="border-radius:10px" id="phone" name="phone" placeholder="Phone Number" maxlength="10" pattern="[1-9]{1}[0-9]{9}" required />
+                        <label for="phone">Phone Number</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-floating">
+                        <select class="form-select bg-transparent" id="select1" name="select1" required>
+                            <option value="MBBS">Select</option>
+                            <option value="MBBS">MBBS</option>
+                            <option value="PG-Medical">PG-Medical</option>
+                            <option value="Masters">Masters</option>
+                            <option value="Bachelors">Bachelors</option>
+                            <option value="USMLE">USMLE</option>
+                            <option value="CaRMS">CaRMS</option>
+                            <option value="PGDM">PGDM</option>
+                            <option value="Diploma">Diploma</option>
+                            <option value="PHD">PHD</option>
+                            <option value="Higher secondary">Higher secondary</option>
+                            <option value="Pathway Programs">Pathway Programs</option>
+                            <option value="Language Proficiency">Language Proficiency</option>
+                        </select>
+                        <label for="select1">Program/ Course</label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-floating">
+                        <textarea class="form-control bg-transparent" placeholder="Special Request" id="message" name="message" style="height: 100px"></textarea>
+                        <label for="message">Special Request</label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-outline-dark w-100 py-3" type="submit" id="send" name="send">Book Now</button>
+                </div>
+            </div>
+        </form>
+        {% with messages = get_flashed_messages(with_categories=True) %}
+        {% if messages %}
+          {% for category, message in messages %}
+            <div class="alert alert-{{ category }}">{{ message }}</div>
+          {% endfor %}
+        {% endif %}
+      {% endwith %}
+      
+                        <br>
+        <center><span class="close-btn " id="close-btn" >Close</span></center>
+    </div>
+    
+    <section class="call-buton"><a class="cc-calto-action-ripple" href="tel:+919611065883"><i class="fa fa-phone"></i><span class="num"></span>
+    </a>
+    </section>
+    <ul class="social-media-container">
+        <li class="social-media wha">
+            <i class="fab fa-whatsapp"></i>
+            <a href="https://wa.me/+91 9686111406" target="_blank">Chat  on Whatsapp</a>
+        </li>
+        <li class="social-media blog">
+            <i class="fab fa-facebook-f"></i>
+            <a href="https://www.facebook.com/bluechipglobal/" target="_blank">Follow on Facebook</a>
+        </li>
+        <li class="social-media pinterest">
+            <i class="fab fa-linkedin-in"></i>
+            <a href="https://www.linkedin.com/in/bluechipservicesintl/?original_referer=android-app%3A%2F%2Fcom.google.android.googlequicksearchbox%2F" target="_blank">Connect on Linkedin</a>
+        </li>
+        <li class="social-media linkedin">
+            <i class="fab fa-twitter"></i>
+            <a href="https://x.com/i/flow/login?redirect_after_login=%2Fbluechip_global" target="_blank">Connect on Twitter</a>
+        </li>
+        <li class="social-media instagram">
+            <i class="fab fa-instagram"></i>
+            <a href="https://www.instagram.com/bluechip_global?igsh=ZHNtdzZhYjAzeTB5" target="_blank">Follow me on Instagram</a>
+        </li>
+    
+    </ul>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary1" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    
+                    <marquee scrolldelay="80">
+                        {% for notification in notifications %}
+                        <a href="" style="color: white;">                <li>{{ notification.notification }}</li>
+                            {% else %}
+                                <li>No notifications yet.</li></a>{% endfor %}</marquee>
+                                
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://x.com/i/flow/login?redirect_after_login=%2Fbluechip_global"><i class="fab fa-twitter fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.facebook.com/bluechipglobal/"><i class="fab fa-facebook-f fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.linkedin.com/in/bluechipservicesintl/?original_referer=android-app%3A%2F%2Fcom.google.android.googlequicksearchbox%2F"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.instagram.com/bluechip_global?igsh=ZHNtdzZhYjAzeTB5"><i class="fab fa-instagram fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href="https://wa.me/+91 9686111406"><i class="fab fa-whatsapp fw-normal"></i></a>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!-- Topbar End -->
+
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+       
+
+        {% block navbar %}
+           {% include "navbar.html" %}
+        {% endblock %}
+          
+        
+        
+        
+       
+
+        <div class="container-fluid bg-primary py-5 mb-5 hero-index">
+            <div class="container py-5">
+                <div class="row justify-content-center py-5">
+                    <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+                        <h1 class="display-3 text-white mb-3 animated slideInDown" style="  text-shadow: 1px 1px 2px #000000;">Welcome to BlueChip</h1>
+                        <p class="fs-4 text-white mb-4 animated slideInDown" style="  text-shadow: 1px 1px 2px #000000;">In the dynamic realm of higher education consultancy, one name has consistently shone brightly as a guiding start Bluechip Services International Pvt Ltd. Established in 1999 in the vibrant city of Chennai, this consultancy has been a pioneer in enabling ambitious students to fulfill their aspirations of studying, working, and settling overseas.</p>
+                        <div class="position-relative w-75 mx-auto animated slideInDown">
+                            <a href="contact"><button type="button" class="btn btn-primary py-3 px-5 mt-2 rounded-pill" style="margin-top: 7px;">Request An Appointment</button></a>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary1 px-3">Services</h6>
+                <h1 class="mb-5">Our Services</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4 " style="border-radius: 10px;">
+                        <div class="d-inline-flex align-items-center justify-content-center  rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            <img src="{{ url_for('static', filename='img/counsiling image.jpg') }}" alt="Counseling Image" style="width: 100%; height: auto;">
+                        </div>
+                        <h5 class="mt-4">Expert Counselling</h5>
+                        <hr class="w-25 mx-auto bg-primary mb-1">
+                        <hr class="w-50 mx-auto bg-primary mt-0">
+                        <p class="mb-0"></p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4" style="border-radius: 10px;">
+                        <div class="d-inline-flex align-items-center justify-content-center  rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            
+                                <img src="{{ url_for('static', filename='img/select_university2.png') }} " alt="Select University"  style="width: 100%; height: auto;">
+                        </div>
+                        <h5 class="mt-4">Country Program Selection</h5>
+                        <hr class="w-25 mx-auto bg-primary mb-1">
+                        <hr class="w-50 mx-auto bg-primary mt-0">
+                        <p class="mb-0"></p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4" style="border-radius: 10px;">
+                        <div class="d-inline-flex align-items-center justify-content-center  rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            <img src="{{ url_for('static', filename='img/test preparation icon.jpg') }}" alt="Test Preparation Icon" style="width: 100%; height: auto;">
+                        </div>
+                        <h5 class="mt-4">Test Program Guidence</h5>
+                        <hr class="w-25 mx-auto bg-primary mb-1">
+                        <hr class="w-50 mx-auto bg-primary mt-0">
+                        <p class="mb-0"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 mt-4">
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4" style="border-radius: 10px;">
+                        <div class="d-inline-flex align-items-center justify-content-center rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            <img src="{{ url_for('static', filename='img/Visa-Support-2.png') }}" alt="Visa Support" style="width: 100%; height: auto;">
+                        </div>
+                        <h5 class="mt-4">Visa Assistance</h5>
+                        <hr class="w-25 mx-auto bg-primary mb-1">
+                        <hr class="w-50 mx-auto bg-primary mt-0">
+                    
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4" style="border-radius: 10px;">
+                        <div class="d-inline-flex align-items-center justify-content-center  rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            <img src="{{ url_for('static', filename='img/logistical support.png') }}" alt="Logistical Support" style="width: 100%; height: auto;">
+                        </div>
+                        <h5 class="mt-4">Pre-Departure Preparation </h5>
+                        <hr class="w-25 mx-auto bg-primary mb-1">
+                        <hr class="w-50 mx-auto bg-primary mt-0">
+                        <p class="mb-0"></p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4" style="border-radius: 10px;">
+                        <div class="d-inline-flex align-items-center justify-content-center  rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            <img src="{{ url_for('static', filename='img/ongoing.png') }}" alt="Ongoing" style="width: 100%; height: auto;">
+                        </div>
+                        <h5 class="mt-4">Post-Arrival Assistance</h5>
+                        <hr class="w-25 mx-auto bg-primary mb-1">
+                        <hr class="w-50 mx-auto bg-primary mt-0">
+                        <p class="mb-0"></p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Package Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary1 px-3">Timeline</h6>
+                <h1 class="mb-5">Our Journey of Achievements, Recognition, and Bragging Rights</h1>
+            </div>
+            <div class="timeline">
+                <ul>
+                    <li>
+                        <div class="content">
+                            <h3>Founded IN</h3>
+                            <p>The First Study Abroad Consultant</p>
+                        </div>
+                        <div class="time">
+                        <h4 style="color: white;">1999</h4>
+                        </div>
+                    </li>
+                <li>
+                    <div class="content">
+                        <h3>To Promote University's from India</h3>
+                        <p>USA , UK , NEWZEALAND , AUSTRELIA</p>
+                    </div>
+                    <div class="time">
+                    <h4 style="color: white;">2000</h4>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="content">
+                    <h3>Success Connected With</h3>
+                    <p>12,000+ Healthcare <br>
+                    53,000+ Management,CS,
+                    </p>
+                    </div>
+                    <div class="time">
+                    <h4 style="color: white;">2004</h4>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="content">
+                    <h3>Established Office IN </h3>
+                    <p>MALAYSIA,KUALA LUMPUR</p>
+                    </div>
+                    <div class="time">
+                    <h4 style="color: white;">2006</h4>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="content">
+                    <h3>We Become British Counsil</h3>
+                    <p>Tofel recognized Training Center Globally</p>
+                    </div>
+                    <div class="time">
+                    <h4 style="color: white;">2008</h4>
+                    </div>
+                </li>
+                <div style="clear:both;"></div>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Package End -->
+
+
+
+
+
+
+
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary1 px-3">Destination</h6>
+                <h1 class="mb-5">Study Destination</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s" >
+                    <div class="team-item" style="border-radius: 20px;">
+                        <div class="overflow-hidden" style="border-radius: 20px;">
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/usa.jpg') }}"alt="" style="height: 27vh">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                            
+                            <a class="btn btn-square mx-1" href="usa"><i class="fab fa-periscope"></i></a>
+                            
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">USA</h5>
+                            <small></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item" style="border-radius: 20px;">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid"  src="{{ url_for('static', filename='img/germani.jpg') }}" alt="" style="border-radius: 20px;">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                            
+                            <a class="btn btn-square mx-1" href="germani"><i class="fab fa-periscope"></i></a>
+                            
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">GERMANY</h5>
+                            <small></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item" style="border-radius: 20px;">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/thailand.jpg') }}" alt="" style="border-radius: 20px;">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                            
+                            <a class="btn btn-square mx-1" href="thailand"><i class="fab fa-periscope"></i></a>
+                            
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">THAILAND</h5>
+                            <small></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item" style="border-radius: 20px;">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/austrelia.jpg') }}" alt="" style="height: 27vh;width: 500px;border-radius: 20px;">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                            
+                            <a class="btn btn-square mx-1" href="Australia"><i class="fab fa-periscope"></i></a>
+                            
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">AUSTRALIA</h5>
+                            <small></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-xxl py-5">
+        <div class="container">
+        
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item" style="border-radius: 20px;">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/japan.jpg') }} "alt="" style="border-radius: 20px;">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                            
+                            <a class="btn btn-square mx-1" href="japan"><i class="fab fa-periscope"></i></a>
+                            
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">JAPAN</h5>
+                            <small></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item" style="border-radius: 20px;">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/singapore.jpg') }}" alt="" style="height: 28vh;border-radius: 20px;">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                            
+                            <a class="btn btn-square mx-1" href="singapore"><i class="fab fa-periscope"></i></a>
+                            
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">SINGAPORE</h5>
+                            <small></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item" style="border-radius: 20px;">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/itali.jpg') }}" alt="" style="border-radius: 20px;">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                            
+                            <a class="btn btn-square mx-1" href="italy"><i class="fab fa-periscope"></i></a>
+                            
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">ITALY</h5>
+                            <small></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item" style="border-radius: 20px;">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/canada.jpg') }}" alt="" style="border-radius: 20px;">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                            
+                            <a class="btn btn-square mx-1" href="Canada"><i class="fab fa-periscope"></i></a>
+                            
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">CANADA</h5>
+                            <small></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-xxl py-5">
+        <div class="container">
+        
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item" style="border-radius: 20px;">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/uk.jpeg') }}" alt="" style="border-radius: 20px;">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                            
+                            <a class="btn btn-square mx-1" href="uk"><i class="fab fa-periscope"></i></a>
+                            
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">UK</h5>
+                            <small></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item" style="border-radius: 20px;">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/malesia.jpg') }}" alt="" style="height: 28vh;border-radius: 20px;">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                            
+                            <a class="btn btn-square mx-1" href="malaysia"><i class="fab fa-periscope"></i></a>
+                            
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">MALAYSIA</h5>
+                            <small></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item" style="border-radius: 20px;">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/itali.jpg') }}" alt="" style="border-radius: 20px;">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                            
+                            <a class="btn btn-square mx-1" href="newzealand"><i class="fab fa-periscope"></i></a>
+                            
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">NEW ZEALAND</h5>
+                            <small></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item" style="border-radius: 20px;">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/dubai.jpg') }}" alt="" style="border-radius: 20px;">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                            
+                            <a class="btn btn-square mx-1" href="dubai"><i class="fab fa-periscope"></i></a>
+                            
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">DUBAI</h5>
+                            <small></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-xxl py-5">
+        <div class="container">
+        
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item" style="border-radius: 20px;">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/finland.jpg') }}" alt="" style="border-radius: 20px;">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                            
+                            <a class="btn btn-square mx-1" href="finland"><i class="fab fa-periscope"></i></a>
+                            
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">FINLAND</h5>
+                            <small></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item" style="border-radius: 20px;">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/france.jpg') }}" alt="" style="height: 28vh;border-radius: 20px;">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                            
+                            <a class="btn btn-square mx-1" href="france"><i class="fab fa-periscope"></i></a>
+                            
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">FRANCE</h5>
+                            <small></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item" style="border-radius: 20px;">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/spain.jpg') }}" alt="" style="border-radius: 20px;">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                            
+                            <a class="btn btn-square mx-1" href="spainpg"><i class="fab fa-periscope"></i></a>
+                            
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">SPAIN</h5>
+                            <small></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item" style="border-radius: 20px;">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid"src="{{ url_for('static', filename='img/ireland.jpg') }}" alt="" style="border-radius: 20px;">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                            
+                            <a class="btn btn-square mx-1" href="ireland"><i class="fab fa-periscope"></i></a>
+                            
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">IRELAND</h5>
+                            <small></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-xxl py-5">
+        <div class="container">
+        
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item" style="border-radius: 20px;">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/switzerland.jpg') }}" alt="" style="border-radius: 20px;">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                            
+                            <a class="btn btn-square mx-1" href="switzerland"><i class="fab fa-periscope"></i></a>
+                            
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">SWITZERLAND</h5>
+                            <small></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item" style="border-radius: 20px;">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/cyprus.jpeg') }}" alt="" style="height: 28vh;border-radius: 20px;">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                            
+                            <a class="btn btn-square mx-1" href="cyprus"><i class="fab fa-periscope"></i></a>
+                            
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">CYPRUS</h5>
+                            <small></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item" style="border-radius: 20px;">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/denmark.webp') }}" alt="" style="border-radius: 20px;">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                            
+                            <a class="btn btn-square mx-1" href="denmark"><i class="fab fa-periscope"></i></a>
+                            
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">DENMARK</h5>
+                            <small></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item" style="border-radius: 20px;">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/austrelia.jpg') }}" alt="" style="border-radius: 20px;">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                            
+                            <a class="btn btn-square mx-1" href="austria"><i class="fab fa-periscope"></i></a>
+                            
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">AUSTRIA</h5>
+                            <small></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="section-title bg-white text-center text-primary1 px-3">Testimonial</h6>
+                <h1 class="mb-5">Our Clients Say!!!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel position-relative">
+                <div class="testimonial-item bg-white text-center border p-4" style="border-radius: 30px;">
+                    <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="{{ url_for('static', filename='img/logo.jpg') }}" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">priya jana</h5>
+                    <p>Saudi Arabia</p>
+                    <p class="mb-0">I wholeheartedly recommend Bluechip Services International to fellow staff nurses for their recruitment processes. Our financial transactions were solely for the various paperwork stages, and I am grateful to the Bluechip team for providing this wonderful opportunity in my career. My dream has indeed come true, and for that, I express my heartfelt thanks.</p>
+                </div>
+                <div class="testimonial-item bg-white text-center border p-4" style="border-radius: 30px;">
+                    <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="{{ url_for('static', filename='img/logo.jpg') }}" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Swarna Latha</h5>
+                    <p>Telangana</p>
+                    <p class="mt-2 mb-0">Im from Telangana flying to bangalore for My Healthcare Management program in USA and for my final pre departure briefing I am very happy with Bluechip, Thay have guided me very nicely, I am very happy with this agency. And I refer to all the candidates to go through this agency,
+                        Especially I thank Mrs.Mubeen Taj madam for her guidance in my travel. Madam once again I thank you from bottom of my heart for your guidance.
+                        Thank you.</p>
+                </div>
+                <div class="testimonial-item bg-white text-center border p-4" style="border-radius: 30px;">
+                    <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="{{ url_for('static', filename='img/logo.jpg') }}" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">shamli</h5>
+                    <p>Bangalore</p>
+                    <p class="mt-2 mb-0">I am shamli staff nurse
+                        Approached bluechip to go to Saudi, I attended interview in Bangalore office with hospital delegates,after the Dataflow,credibility, eligibility, and Promoteric also my medical ..They provided me free flight ticket ,good salary ,am so excited to travel to Saudi to pursue my career Thank you so much for al the staff team and management to make this happen.i certainly will recommend all my friends to approch bluechip for their overseas settlement</p>
+                </div>
+                <div class="testimonial-item bg-white text-center border p-4" style="border-radius: 30px;">
+                    <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="{{ url_for('static', filename='img/logo.jpg') }}" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Maddy</h5>
+                    <p>Chennai</p>
+                    <p class="mt-2 mb-0">The consultancy was really good compared to Y axis as they were very clear on what is the requirement and they were able to advise the right type of visa application. They gave a clear breakdown on the parts and the costs involved which is very important before taking any decision.
+
+                        Lastly this was a recommended location from a friend who travelled to US based on their services and was happy with the service</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <!-- Booking Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class=" p-5" style=" box-shadow: 0px 4px 8px 1px black;border-radius:10px">
+                <div class="row g-5 align-items-center">
+                    <div class="col-md-6 text-white">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.301573432605!2d77.64025397412107!3d13.016457613895184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1727a8078b4b%3A0xc51889e69d4d37ff!2sBluechip%20Services%20International%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1724408198017!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="col-md-6">
+                        <h1 class="text-black mb-4">Request an Appointment</h1>
+                        <form action="{{ url_for('contact') }}" method="POST" enctype="multipart/form-data" onsubmit="return validateForm()">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-transparent" id="name" name="name" placeholder="Your Name" required>
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control bg-transparent" id="email" name="email" placeholder="Your Email" required>
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating" id="date3" data-target-input="nearest">
+                                        <input type="text" class="form-control bg-transparent datetimepicker-input" style="border-radius:10px" id="phone" name="phone" placeholder="Phone Number" maxlength="10" pattern="[1-9]{1}[0-9]{9}" required />
+                                        <label for="phone">Phone Number</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select bg-transparent" id="select1" name="select1" required>
+                                            <option value="MBBS">Select</option>
+                                            <option value="MBBS">MBBS</option>
+                                            <option value="PG-Medical">PG-Medical</option>
+                                            <option value="Masters">Masters</option>
+                                            <option value="Bachelors">Bachelors</option>
+                                            <option value="USMLE">USMLE</option>
+                                            <option value="CaRMS">CaRMS</option>
+                                            <option value="PGDM">PGDM</option>
+                                            <option value="Diploma">Diploma</option>
+                                            <option value="PHD">PHD</option>
+                                            <option value="Higher secondary">Higher secondary</option>
+                                            <option value="Pathway Programs">Pathway Programs</option>
+                                            <option value="Language Proficiency">Language Proficiency</option>
+                                        </select>
+                                        <label for="select1">Program/ Course</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control bg-transparent" placeholder="Special Request" id="message" name="message" style="height: 100px"></textarea>
+                                        <label for="message">Special Request</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-outline-dark w-100 py-3" type="submit" id="send" name="send">Book Now</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Booking Start -->
+        
+
+    <!-- Footer Start -->
+    {% block footer %}
+           {% include "footer.html" %}
+    {% endblock %}
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/easing.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/waypoints.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/moment.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/moment-timezone.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/tempusdominus-bootstrap-4.min.js') }}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+    
+    <script>
+    // Show the popup 5 seconds after the page has fully loaded
+    window.addEventListener('load', function() {
+        setTimeout(function() {
+            document.getElementById('overlay').style.display = 'block';
+            document.getElementById('popup').style.display = 'block';
+        }, 5000); // 5000 milliseconds = 5 seconds
+    });
+
+    // Close the popup when the close button is clicked
+    document.getElementById('close-btn').addEventListener('click', function() {
+        document.getElementById('overlay').style.display = 'none';
+        document.getElementById('popup').style.display = 'none';
+    });
+</script>
+<script>
+function validateForm() {
+    const phone = document.getElementById("phone").value;
+    const pattern = /^[1-9]{1}[0-9]{9}$/;
+    
+    if (!pattern.test(phone)) {
+        alert("Please enter a valid 10-digit phone number.");
+        return false;  // Prevent form submission
+    }
+
+    return true;  // Allow form submission
+}
+</script>
+</body>
+</html>
+

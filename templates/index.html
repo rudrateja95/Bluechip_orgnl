@@ -32,71 +32,7 @@
 
 <body>
 
-    <div class="overlay" id="overlay"></div>
-    <div class="popup" id="popup" style="border-radius: 30px;">
-        <h1 class="text-black mb-4">Request an appointment</h1>
-        <form action="{{ url_for('contact') }}" method="POST" enctype="multipart/form-data" onsubmit="return validateForm()">
-            <div class="row g-3">
-                <div class="col-md-6">
-                    <div class="form-floating">
-                        <input type="text" class="form-control bg-transparent" id="name" name="name" placeholder="Your Name" required>
-                        <label for="name">Your Name</label>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="form-floating">
-                        <input type="email" class="form-control bg-transparent" id="email" name="email" placeholder="Your Email" required>
-                        <label for="email">Your Email</label>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="form-floating" id="date3" data-target-input="nearest">
-                        <input type="text" class="form-control bg-transparent datetimepicker-input" style="border-radius:10px" id="phone" name="phone" placeholder="Phone Number" maxlength="10" pattern="[1-9]{1}[0-9]{9}" required />
-                        <label for="phone">Phone Number</label>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="form-floating">
-                        <select class="form-select bg-transparent" id="select1" name="select1" required>
-                            <option value="MBBS">Select</option>
-                            <option value="MBBS">MBBS</option>
-                            <option value="PG-Medical">PG-Medical</option>
-                            <option value="Masters">Masters</option>
-                            <option value="Bachelors">Bachelors</option>
-                            <option value="USMLE">USMLE</option>
-                            <option value="CaRMS">CaRMS</option>
-                            <option value="PGDM">PGDM</option>
-                            <option value="Diploma">Diploma</option>
-                            <option value="PHD">PHD</option>
-                            <option value="Higher secondary">Higher secondary</option>
-                            <option value="Pathway Programs">Pathway Programs</option>
-                            <option value="Language Proficiency">Language Proficiency</option>
-                        </select>
-                        <label for="select1">Program/ Course</label>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="form-floating">
-                        <textarea class="form-control bg-transparent" placeholder="Special Request" id="message" name="message" style="height: 100px"></textarea>
-                        <label for="message">Special Request</label>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <button class="btn btn-outline-dark w-100 py-3" type="submit" id="send" name="send">Book Now</button>
-                </div>
-            </div>
-        </form>
-        {% with messages = get_flashed_messages(with_categories=True) %}
-        {% if messages %}
-          {% for category, message in messages %}
-            <div class="alert alert-{{ category }}">{{ message }}</div>
-          {% endfor %}
-        {% endif %}
-      {% endwith %}
-      
-                        <br>
-        <center><span class="close-btn " id="close-btn" >Close</span></center>
-    </div>
+   
     
     <section class="call-buton"><a class="cc-calto-action-ripple" href="tel:+919611065883"><i class="fa fa-phone"></i><span class="num"></span>
     </a>
@@ -178,7 +114,7 @@
             <div class="container py-5">
                 <div class="row justify-content-center py-5">
                     <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
-                        <h1 class="display-3 text-white mb-3 animated slideInDown" style="  text-shadow: 1px 1px 2px #000000;">Welcome to BlueChip</h1>
+                        <h3 class="display-3 text-white mb-3 animated slideInDown" style="  text-shadow: 1px 1px 2px #000000;">Welcome to BlueChip Admission Institution</h3>
                         <p class="fs-4 text-white mb-4 animated slideInDown" style="  text-shadow: 1px 1px 2px #000000;">In the dynamic realm of higher education consultancy, one name has consistently shone brightly as a guiding start Bluechip Services International Pvt Ltd. Established in 1999 in the vibrant city of Chennai, this consultancy has been a pioneer in enabling ambitious students to fulfill their aspirations of studying, working, and settling overseas.</p>
                         <div class="position-relative w-75 mx-auto animated slideInDown">
                             <a href="contact"><button type="button" class="btn btn-primary py-3 px-5 mt-2 rounded-pill" style="margin-top: 7px;">Request An Appointment</button></a>   
@@ -847,21 +783,7 @@
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 
     
-    <script>
-    // Show the popup 5 seconds after the page has fully loaded
-    window.addEventListener('load', function() {
-        setTimeout(function() {
-            document.getElementById('overlay').style.display = 'block';
-            document.getElementById('popup').style.display = 'block';
-        }, 5000); // 5000 milliseconds = 5 seconds
-    });
 
-    // Close the popup when the close button is clicked
-    document.getElementById('close-btn').addEventListener('click', function() {
-        document.getElementById('overlay').style.display = 'none';
-        document.getElementById('popup').style.display = 'none';
-    });
-</script>
 <script>
 function validateForm() {
     const phone = document.getElementById("phone").value;

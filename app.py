@@ -11,6 +11,7 @@ from alembic import op
 import sqlalchemy as sa
 import io
 import base64
+import pandas as pd
 from io import BytesIO
 from flask_socketio import SocketIO, send, emit
 
@@ -174,7 +175,21 @@ class ChatMessage(db.Model):
     timestamp = db.Column(db.DateTime, default=datetime.utcnow)
 
     def __repr__(self):
-        return f'<ChatMessage {self.user_type}: {self.message}>'   
+        return f'<ChatMessage {self.user_type}: {self.message}>' 
+    
+# Leads module
+    
+class Lead(db.Model):
+    __tablename__ = 'leads'
+    id = db.Column(db.Integer, primary_key=True)
+    preferred_course = db.Column(db.String(255), nullable=False)
+    current_qualification = db.Column(db.String(255), nullable=False)
+    lead_name = db.Column(db.String(255), nullable=False)
+    email = db.Column(db.String(255), unique=True, nullable=False)
+    contact_number = db.Column(db.String(20), unique=True, nullable=False)
+
+    def __repr__(self):
+        return f'<Lead lead_name={self.lead_name} email={self.email}>'  
 
 # Initialize Mail
 mail = Mail(app)
@@ -192,6 +207,72 @@ def index():
     # Fetch all notifications from BluechipData
     notifications = BluechipData.query.all()
     return render_template('index.html', notifications=notifications)
+
+# Fetch all leads
+
+@app.route('/upload_leads', methods=['POST'])
+def upload_leads():
+    if 'file' not in request.files:
+        return render_template('leads.html', message="No file part")
+
+    file = request.files['file']
+    if file.filename == '':
+        return render_template('leads.html', message="No selected file")
+
+    try:
+        df = pd.read_excel(file)
+        df.columns = df.columns.str.strip()
+
+        required_columns = [
+            'PREFERRED COURSE',
+            'CURRENT QUALIFICATION',
+            'LEAD NAME (Student)',
+            'EMAIL',
+            'CONTACT'
+        ]
+
+        for col in required_columns:
+            if col not in df.columns:
+                return render_template('leads.html', message=f"Missing column in Excel: {col}")
+
+        skipped = 0
+        added = 0
+
+        for index, row in df.iterrows():
+            email = row['EMAIL']
+            contact_number = str(row['CONTACT'])
+
+            existing_lead = Lead.query.filter(
+                (Lead.email == email) | (Lead.contact_number == contact_number)
+            ).first()
+
+            if existing_lead:
+                skipped += 1
+                continue
+
+            lead = Lead(
+                preferred_course=row['PREFERRED COURSE'],
+                current_qualification=row['CURRENT QUALIFICATION'],
+                lead_name=row['LEAD NAME (Student)'],
+                email=email,
+                contact_number=contact_number
+            )
+            db.session.add(lead)
+            added += 1
+
+        db.session.commit()
+        # Always return simple message
+        return render_template('leads.html', message="✅ Sheet uploaded successfully")
+
+    except Exception as e:
+        return render_template('leads.html', message=f"❌ Error processing file: {str(e)}")
+
+
+
+@app.route('/leads')
+def leads():
+    leads = Lead.query.all()
+    return render_template('leads.html', leads=leads)
 
 @app.route('/add_university', methods=['GET', 'POST'])
 def add_university():
@@ -626,6 +707,21 @@ def upload_documents():
         flash("No student ID in session!", "danger")
 
     return redirect(url_for('adm_student'))
+
+
+@app.route('/delete_student/<int:student_id>', methods=['POST'])
+def delete_student(student_id):
+    student = Student.query.get(student_id)
+
+    if student:
+        db.session.delete(student)
+        db.session.commit()
+        flash("Student and documents deleted successfully!", "success")
+    else:
+        flash("Student not found!", "danger")
+
+    return redirect(url_for('st_documents'))
+
 
 
     
